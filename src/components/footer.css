@@ -1,0 +1,43 @@
+/* RODAPÉ */
+.footer{
+  width: auto;
+  justify-content: center;
+  align-items: center;
+}
+  
+.foot-stamps{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 25px;
+}
+
+.foot-img{
+  width: auto;
+  height: 45px;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.foot-address{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.foot-address p{
+  text-align: center;
+  color: #adadad !important;
+  margin-top: 40px;
+  line-height: 25px;
+  font-size: 11px;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.foot{
+  background-color: white;
+}
+
