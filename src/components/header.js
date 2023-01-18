@@ -1,12 +1,10 @@
 import React from "react";
-import { useState } from 'react';
 import "./header.css";
+import Dropdown from 'react-bootstrap/Dropdown';
 
 function Header(){
-    const [isShown, setIsShown] = useState(false);
-
+    
     return (
-        
         <div>
             <div className="header container mt-3 mb-3">
                 <div className="row head align-items-center">
@@ -49,29 +47,87 @@ function Header(){
                         </div>
                     </div>
                     {/* Cart info */}
-                    <div onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)} className="col-auto">
-                        <div className="row align-items-center justify-content-center">
-                            <div className="col-4">
-                                <img src="assets/icons/cart-shopping-solid.svg" className="cart-icon" />
-                                <div className="badge">
-                                    <span className="badge-value">1</span>
+                    <div className="col-auto d-inline-block">
+                        <Dropdown>
+                            <Dropdown.Toggle variant="success" id="dropdown-basic" className="cart-dropdown" align="end">
+                                <div className="row align-items-center justify-content-center">
+                                    <div className="col-4 px-1">
+                                        <img src="assets/icons/cart-shopping-solid.svg" className="cart-icon" />
+                                        <div className="badge">
+                                            <span className="badge-value">1</span>
+                                        </div>
+                                    </div>
+                                    <div className="col-8 p-0">
+                                        <div>
+                                            <p className="cart-total mb-0">TOTAL: R$ <span>7.235,00</span></p>
+                                        </div>
+                                        <div className="d-flex align-items-center">
+                                            <p className="cart-balance mb-0">SALDO: R$ <span>9.000,00</span></p> 
+                                        </div>
+                                    </div>      
                                 </div>
-                            </div>
-                            <div className="col-8 p-0">
+                            </Dropdown.Toggle>
+                            <Dropdown.Menu className="dropdown-menu p-0">
                                 <div>
-                                    <p className="cart-total mb-0">TOTAL: R$ <span>7.235,00</span></p>
+                                    <div className="cart-dropdown-header">
+                                        <h3>Meu carrinho</h3>
+                                        <p>Saldo: R$630.00</p>
+                                    </div>
+                                    <div className="cart-dropdown-products">
+                                        <div className="cart-product d-flex justify-content-center mb-2">
+                                            <div className="cart-product-img">
+                                                <img src="assets/produto_0.png"/>
+                                            </div>
+                                            <div className="cart-product-name px-1">
+                                                <label className="d-inline-block">BOBINA PARA CALCULADORA</label>
+                                                <span>Quantidade: 3</span>
+                                                <p>R$128,20</p>
+                                            </div>
+                                            <div className="cart-product-delete d-grid align-content-center px-1">
+                                                <button><img src="assets/icons/close.svg" /></button>
+                                            </div>
+                                        </div>
+                                        <div className="cart-product d-flex justify-content-center mb-2">
+                                            <div className="cart-product-img">
+                                                <img src="assets/produto1.jpg"/>
+                                            </div>
+                                            <div className="cart-product-name px-1">
+                                                <label className="d-inline-block">BOBINA PARA CALCULADORA</label>
+                                                <span>Quantidade: 3</span>
+                                                <p>R$128,20</p>
+                                            </div>
+                                            <div className="cart-product-delete d-grid align-content-center px-1">
+                                                <button><img src="assets/icons/close.svg" /></button>
+                                            </div>
+                                        </div>
+                                        <div className="cart-product d-flex justify-content-center mb-2">
+                                            <div className="cart-product-img">
+                                                <img src="assets/produto2.jpg"/>
+                                            </div>
+                                            <div className="cart-product-name px-1">
+                                                <label className="d-inline-block">BOBINA PARA CALCULADORA</label>
+                                                <span>Quantidade: 3</span>
+                                                <p>R$128,20</p>
+                                            </div>
+                                            <div className="cart-product-delete d-grid align-content-center px-1">
+                                                <button><img src="assets/icons/close.svg" /></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="cart-dropdown-total">
+                                        <div className="d-flex align-items-center">
+                                            <p className="d-block">Total</p>
+                                            <p className="d-block">R$7.230,00</p>
+                                        </div>
+                                        <div className="d-flex align-items-center justify-content-around mt-2">
+                                            <button className="btn-finish">Finalizar</button>
+                                            <button className="btn-basket">Editar cesta</button>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div className="d-flex align-items-center">
-                                    <p className="cart-balance mb-0">SALDO: R$ <span>9.000,00</span></p> 
-                                </div>
-                            </div>  
-                        </div>
+                            </Dropdown.Menu>
+                        </Dropdown>
                     </div>
-                    {isShown && (
-                        <div className="cart-hover-box">
-                            Teste
-                        </div>
-                    )}
                 </div>
             </div>
 

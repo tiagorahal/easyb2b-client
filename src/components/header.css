@@ -87,7 +87,7 @@
     --bs-badge-padding-x: 4px;
     --bs-badge-padding-y: 2px;
     margin-top: -2rem;
-    margin-left: 1rem;
+    margin-left: -0.4rem;
 }
 
 .badge-value{
@@ -127,9 +127,104 @@
     letter-spacing: -0.05rem;
 }
 
-.cart-hover-box{
-    position: absolute;
-    align-content: flex-end;
+.cart-dropdown{
+    border-color: transparent !important;
+    background-color: transparent !important;
+    padding: 0;
+    display: flex;
 }
-
-
+.cart-dropdown:hover{
+    background-color: transparent;
+    border-color: transparent;
+}
+.cart-dropdown-header{
+    background: #e6eff9;
+    height: 90px;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+.cart-dropdown-header h3{
+    font-weight: 300;
+    color: #394270;
+    font-size: 25px;
+}
+.cart-dropdown-header p{
+    margin-left: 2px !important;
+    color: #40d3ac;
+    font-size: 12px;
+    font-weight: 800;
+}
+.dropdown-menu{
+    width: 360px;
+}
+.cart-dropdown-total{
+    height: 130px;
+}
+.cart-dropdown-total p{
+    width: 50%;
+    font-weight: 800;
+    color: #363c7b;
+    margin: 15px;
+    margin-top: 20px;
+}
+.btn-finish{
+    width: 40%;
+    font-weight: 700;
+    font-size: 12px;
+    height: 42px;
+    border-radius: 30px;
+    background-color: #00cc97;
+    color: white;
+    outline: none !important;
+    border: none;
+}
+.btn-basket{
+    width: 40%;
+    font-weight: 700;
+    font-size: 12px;
+    height: 42px;
+    border-radius: 30px;
+    border-color: #363c7b !important;
+    border: 2px solid rgba(102, 102, 102, 0.24);
+    color: #474d8b;
+}
+.cart-dropdown-products{
+    max-height: 244px;
+    overflow: auto;
+}
+.cart-product-img img{
+    width: 90px;
+}
+.cart-product-name{
+    overflow-x: hidden;
+    border-bottom: 1px solid #dee2e6;
+}
+.cart-product-name label{
+    line-height: 0px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+.cart-product-name span{
+    color: lightgray;
+    font-size: 11px;
+    display: block;
+    margin-top: -3px;
+    margin-bottom: 0.5rem;
+}
+.cart-product-name p{
+    margin-top: 5px;
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.cart-product-delete{
+    width: 25px;
+    border-bottom: 1px solid #dee2e6;
+}
+.cart-product-delete button{
+    background: none;
+    border: none;
+    padding: 0;
+}
