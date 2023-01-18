@@ -1,18 +1,21 @@
 import './App.css';
 import Footer from './components/footer';
 import Header from './components/header';
-import Checkout from './pages/checkout';
+import {withRouter} from 'react-router-dom';
+import React, { Component } from 'react';
 
-function App() {
-  return (
-    <div className="">
-      <Header />
-      <div className="body">
+class App extends Component {
+  render(){
+    return (
+      <div className="">
+        <Header />
+        <div className="body">
 
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
-  );
+    );
+  }
 }
 
 export default App;
