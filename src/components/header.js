@@ -1,6 +1,13 @@
 import React from "react";
 import "./header.css";
 import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownToggle from "react-bootstrap/esm/DropdownToggle";
+import { DropdownButton } from "react-bootstrap";
+import DropdownItem from "react-bootstrap/esm/DropdownItem";
+import DropdownMenu from "react-bootstrap/esm/DropdownMenu";
+import { CDropdown, CDropdownToggle, CDropdownMenu } from '@coreui/react';
+
+
 
 function Header(){
     
@@ -158,7 +165,37 @@ function Header(){
                     </div>
                 </div>
             </div>
+            
+            {/* Floating lateral carts */}
+            <div className="d-grid floating-carts">
+                <CDropdown variant="btn-group" direction="dropstart" className="mb-1">
+                    <CDropdownToggle>
+                        <img src="assets/icons/cart-shopping-white.svg" className="float-img"/>
+                        <p className="cart-title">Pedido 1</p>
+                    </CDropdownToggle>
+                    <CDropdownMenu>
 
+                    </CDropdownMenu>
+                </CDropdown>
+                <CDropdown variant="btn-group" direction="dropstart" className="mb-1">
+                    <CDropdownToggle>
+                        <img src="assets/icons/cart-shopping-white.svg" className="float-img"/>
+                        <p className="cart-title">Pedido 2</p>
+                    </CDropdownToggle>
+                    <CDropdownMenu>
+
+                    </CDropdownMenu>
+                </CDropdown>
+                <CDropdown variant="btn-group" direction="dropstart" className="mb-1">
+                    <CDropdownToggle>
+                        <img src="assets/icons/cart-shopping-white.svg" className="float-img"/>
+                        <p className="cart-title">Pedido 3</p>
+                    </CDropdownToggle>
+                    <CDropdownMenu>
+
+                    </CDropdownMenu>
+                </CDropdown>
+            </div>
         </div>
     )
 }
