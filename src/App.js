@@ -1,7 +1,8 @@
 import './App.css';
 import Footer from './components/footer';
 import Header from './components/header';
-import Pedidos from './components/pedidos';
+import PedidosUp from './components/pedidos_up';
+import PedidosMiddle from './components/pedidos_middle';
 import React, { Component } from 'react';
 
 class App extends Component {
@@ -10,7 +11,8 @@ class App extends Component {
       <div className="">
         <Header />
         <div className="body">
-        <Pedidos />
+        <PedidosUp />
+        <PedidosMiddle />
         </div>
         <Footer />
       </div>
