@@ -22,8 +22,8 @@ const Pedidos = () => (
           </a>
         </div>
       </div>
-      <form className="bg-light pb-4 pt-4">
-        <div class="form-row pb-4">
+      <form className="bg-light pb-2 pt-4">
+        <div class="form-row pb-2">
           <div class="form-check">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked />
             <label class="form-check-label" for="exampleRadios1">
