@@ -1,0 +1,18 @@
+.pedidos-titulo {
+  font-size: 1.7rem;
+  font-weight: bolder;
+  color: #09124B;
+  padding-left: 0;
+}
+
+.pedidos-link, .pedidos-link:hover {
+  text-decoration: none;
+  color: #09124B;
+  font-size: 0.9rem;
+}
+
+.pedidos-icon-image {
+  height: 1rem;
+  padding-right: 10px;
+  padding-bottom: 3px;
+}

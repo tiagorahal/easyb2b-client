@@ -1,7 +1,7 @@
 import './App.css';
 import Footer from './components/footer';
 import Header from './components/header';
-import {withRouter} from 'react-router-dom';
+import Pedidos from './components/pedidos';
 import React, { Component } from 'react';
 
 class App extends Component {
@@ -10,7 +10,7 @@ class App extends Component {
       <div className="">
         <Header />
         <div className="body">
-
+        <Pedidos />
         </div>
         <Footer />
       </div>
