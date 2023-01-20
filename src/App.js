@@ -8,7 +8,7 @@ import Pedidos from './pages/pedidos';
 
 
 import React, { Component } from 'react';
-import { Route, BrowserRouter as Router, Routes} from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes, Navigate} from "react-router-dom";
 
 class App extends Component {
   render(){
@@ -17,11 +17,10 @@ class App extends Component {
         <Header />
 
         <Routes>
-            <Route path="/checkout" element={<Checkout />} />
-        </Routes>
-
-        <Routes>
-            <Route path="/pedidos" element={<Pedidos />} />
+          <Route path="/" element={<Navigate replace to="/home" />} />
+          <Route path='home' element={<Home />}></Route>
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/pedidos" element={<Pedidos />} />
         </Routes>
 
         <div className="body">
