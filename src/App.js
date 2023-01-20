@@ -25,7 +25,6 @@ class App extends Component {
         </Routes>
 
         <div className="body">
-
         </div>
 
         <Footer />
