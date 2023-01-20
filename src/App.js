@@ -13,7 +13,7 @@ import { Route, BrowserRouter as Router, Routes, Navigate} from "react-router-do
 class App extends Component {
   render(){
     return (
-      <div className="">
+      <div className="app">
         <Header />
 
         <Routes>
