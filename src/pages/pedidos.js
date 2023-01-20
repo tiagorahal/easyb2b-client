@@ -89,7 +89,7 @@ function Pedidos(){
                 </div>
                 <div class="form-group col-2">
                   <label for="inputZip" style={{opacity: 0}} >gambiarra</label>
-                  <button type="submit" class="btn btn-primary w-100">Sign in</button>
+                  <button type="submit" class="btn btn-primary w-100">BUSCAR</button>
                 </div>
                 </div>
               </form>
