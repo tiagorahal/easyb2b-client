@@ -7,17 +7,17 @@ const PedidosMiddle = () => (
     <div className="row pt-1">
       <form className="pedidos-form pb-2">
         <div class="row pt-4">
-          <h4 className="">Legenda</h4>
+          <h5 className="fw-bold">Legenda</h5>
         </div>
         <div class="d-flex flex-row">
           <div className="d-flex flex-row">
             <div className="square1"></div>
-            Cotaçao sei la
+            Pedidos de Cotação
           </div>
           &nbsp; &nbsp; &nbsp;
           <div className="d-flex flex-row">
             <div className="square2"></div>
-            Cotaçao sei la
+            Pedidos de Catálogo
           </div>
         </div>
       </form>

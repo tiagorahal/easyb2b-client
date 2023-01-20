@@ -3,6 +3,7 @@ import Footer from './components/footer';
 import Header from './components/header';
 import PedidosUp from './components/pedidos_up';
 import PedidosMiddle from './components/pedidos_middle';
+import PedidosBottom from './components/pedidos_bottom';
 import React, { Component } from 'react';
 
 class App extends Component {
@@ -13,6 +14,7 @@ class App extends Component {
         <div className="body">
         <PedidosUp />
         <PedidosMiddle />
+        <PedidosBottom />
         </div>
         <Footer />
       </div>
