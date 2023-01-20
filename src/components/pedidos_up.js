@@ -1,8 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import "./pedidos.css";
+import "./pedidos_up.css";
 
-const Pedidos = () => (
+const PedidosUp = () => (
   <div className="pedidos container">
     <div className="row pt-4">
       <div className="row">
@@ -22,8 +22,8 @@ const Pedidos = () => (
           </a>
         </div>
       </div>
-      <form className="bg-light pb-4 pt-4">
-        <div class="form-row pb-4">
+      <form className="pedidos-form pb-2 pt-4">
+        <div class="form-row pb-2">
           <div class="form-check">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked />
             <label class="form-check-label" for="exampleRadios1">
@@ -94,4 +94,4 @@ const Pedidos = () => (
   </div>
 );
 
-export default Pedidos;
+export default PedidosUp;
