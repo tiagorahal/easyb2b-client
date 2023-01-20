@@ -151,7 +151,7 @@ function Header(){
                         <div className="row align-items-center justify-content-center menu-item">
                             <div className="col-auto">COMPRE POR DEPARTAMENTO</div>
                             <div className="col text-center">Produtos</div>
-                            <div className="col text-center">Item de Menu</div>
+                            <Link to="/Pedidos" className="col text-center"><button className="col text-center">Provisorio</button></Link>
                             <div className="col text-center">Item de Menu</div>
                             <div className="col text-center">Item de Menu</div>
                             <div className="col text-center">Item de Menu</div>

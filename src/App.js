@@ -4,10 +4,8 @@ import Header from './components/header';
 
 import Home from './pages/home';
 import Checkout from './pages/checkout';
+import Pedidos from './pages/pedidos';
 
-import PedidosUp from './components/pedidos_up';
-import PedidosMiddle from './components/pedidos_middle';
-import PedidosBottom from './components/pedidos_bottom';
 
 import React, { Component } from 'react';
 import { Route, BrowserRouter as Router, Routes} from "react-router-dom";
@@ -22,10 +20,12 @@ class App extends Component {
             <Route path="/checkout" element={<Checkout />} />
         </Routes>
 
+        <Routes>
+            <Route path="/pedidos" element={<Pedidos />} />
+        </Routes>
+
         <div className="body">
-          <PedidosUp />
-          <PedidosMiddle />
-          <PedidosBottom />
+
         </div>
 
         <Footer />
