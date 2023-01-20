@@ -1,12 +1,8 @@
 import React from "react";
 import "./header.css";
 import Dropdown from 'react-bootstrap/Dropdown';
-import DropdownToggle from "react-bootstrap/esm/DropdownToggle";
-import { DropdownButton } from "react-bootstrap";
-import DropdownItem from "react-bootstrap/esm/DropdownItem";
-import DropdownMenu from "react-bootstrap/esm/DropdownMenu";
 import { CDropdown, CDropdownToggle, CDropdownMenu, CDropdownItem } from '@coreui/react';
-
+import { Link } from "react-router-dom";
 
 
 function Header(){
@@ -127,7 +123,7 @@ function Header(){
                                             <p className="d-block">R$7.230,00</p>
                                         </div>
                                         <div className="d-flex align-items-center justify-content-around mt-2">
-                                            <button className="btn-finish">Finalizar</button>
+                                            <Link to="/Checkout" className="btn-cart-link"><button className="btn-finish w-100">Finalizar</button></Link>
                                             <button className="btn-basket">Editar cesta</button>
                                         </div>
                                     </div>
