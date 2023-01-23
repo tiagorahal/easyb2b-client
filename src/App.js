@@ -4,29 +4,23 @@ import Header from './components/header';
 
 import Home from './pages/home';
 import Checkout from './pages/checkout';
+import Pedidos from './pages/pedidos';
 
-import PedidosUp from './components/pedidos_up';
-import PedidosMiddle from './components/pedidos_middle';
-import PedidosBottom from './components/pedidos_bottom';
 
 import React, { Component } from 'react';
-import { Route, BrowserRouter as Router, Routes} from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes, Navigate} from "react-router-dom";
 
 class App extends Component {
   render(){
     return (
-      <div className="">
+      <div className="app">
         <Header />
 
         <Routes>
-            <Route path="/checkout" element={<Checkout />} />
+          <Route path="/" element={<Home />} exact />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/pedidos" element={<Pedidos />} />
         </Routes>
-
-        <div className="body">
-          <PedidosUp />
-          <PedidosMiddle />
-          <PedidosBottom />
-        </div>
 
         <Footer />
       </div>
