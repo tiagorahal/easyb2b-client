@@ -17,14 +17,10 @@ class App extends Component {
         <Header />
 
         <Routes>
-          <Route path="/" element={<Navigate replace to="/home" />} />
-          <Route path='home' element={<Home />}></Route>
+          <Route path="/" element={<Home />} exact />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/pedidos" element={<Pedidos />} />
         </Routes>
-
-        <div className="body">
-        </div>
 
         <Footer />
       </div>
