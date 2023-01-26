@@ -5,6 +5,7 @@ import Header from './components/header';
 import Home from './pages/home';
 import Checkout from './pages/checkout';
 import Pedidos from './pages/pedidos';
+import ProductsList from './pages/productsList';
 
 
 import React, { Component } from 'react';
@@ -20,6 +21,7 @@ class App extends Component {
           <Route path="/" element={<Home />} exact />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/pedidos" element={<Pedidos />} />
+          <Route path="/productsList" element={<ProductsList />} />
         </Routes>
 
         <Footer />

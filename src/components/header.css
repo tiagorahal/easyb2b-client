@@ -119,6 +119,13 @@
     font-weight: bolder;
     letter-spacing: -0.05rem;
 }
+.btn-products-link{
+    text-decoration: none;
+    color: white;
+}
+.btn-products-link:hover{
+    color: #ec942a;
+}
 
 /* HEADER CART DROPDOWN */
 .cart-dropdown{
