@@ -1,9 +1,7 @@
 import React from "react";
 import "./header.css";
-import Dropdown from 'react-bootstrap/Dropdown';
 import { CDropdown, CDropdownToggle, CDropdownMenu, CDropdownItem } from '@coreui/react';
 import { Link } from "react-router-dom";
-import DropdownToggle from "react-bootstrap/esm/DropdownToggle";
 
 
 function Header(){
