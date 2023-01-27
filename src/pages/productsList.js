@@ -161,7 +161,7 @@ const ProductsList = () => (
                                 </div>
                                 <div className="row label-row">
                                     <div className="col-12 d-flex justify-content-center p-0">
-                                        <Link to="" className="product-description-link"><span>PAPEL CHAMEX A4 LASER 75G PACOTE 500 FOLHAS</span></Link>
+                                        <Link to="/Description" className="product-description-link"><span>PAPEL CHAMEX A4 LASER 75G PACOTE 500 FOLHAS</span></Link>
                                     </div>
                                 </div>
                                 <div className="row label-row">
@@ -364,7 +364,7 @@ const ProductsList = () => (
                                 </div>
                                 <div className="row label-row">
                                     <div className="col-12 d-flex justify-content-center p-0">
-                                        <Link to="" className="product-description-link"><span>PAPEL CHAMEX A4 LASER 75G PACOTE 500 FOLHAS</span></Link>
+                                        <Link to="/Description" className="product-description-link"><span>PAPEL CHAMEX A4 LASER 75G PACOTE 500 FOLHAS</span></Link>
                                     </div>
                                 </div>
                                 <div className="row label-row">
@@ -567,7 +567,7 @@ const ProductsList = () => (
                                 </div>
                                 <div className="row label-row">
                                     <div className="col-12 d-flex justify-content-center p-0">
-                                        <Link to="" className="product-description-link"><span>PAPEL CHAMEX A4 LASER 75G PACOTE 500 FOLHAS</span></Link>
+                                        <Link to="/Description" className="product-description-link"><span>PAPEL CHAMEX A4 LASER 75G PACOTE 500 FOLHAS</span></Link>
                                     </div>
                                 </div>
                                 <div className="row label-row">
@@ -770,7 +770,7 @@ const ProductsList = () => (
                                 </div>
                                 <div className="row label-row">
                                     <div className="col-12 d-flex justify-content-center p-0">
-                                        <Link to="" className="product-description-link"><span>PAPEL CHAMEX A4 LASER 75G PACOTE 500 FOLHAS</span></Link>
+                                        <Link to="/Description" className="product-description-link"><span>PAPEL CHAMEX A4 LASER 75G PACOTE 500 FOLHAS</span></Link>
                                     </div>
                                 </div>
                                 <div className="row label-row">
