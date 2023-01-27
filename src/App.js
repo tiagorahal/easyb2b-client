@@ -6,6 +6,7 @@ import Home from './pages/home';
 import Checkout from './pages/checkout';
 import Pedidos from './pages/pedidos';
 import ProductsList from './pages/productsList';
+import Description from './pages/description';
 
 
 import React, { Component } from 'react';
@@ -22,6 +23,7 @@ class App extends Component {
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/pedidos" element={<Pedidos />} />
           <Route path="/productsList" element={<ProductsList />} />
+          <Route path="/description" element={<Description />} />
         </Routes>
 
         <Footer />
