@@ -13,6 +13,10 @@
 }
 
 .img-container {
-
   background-color: rgba(128, 128, 128, 0.445);
+}
+
+.number-square {
+  min-width: 70px;
+  border: black;
 }

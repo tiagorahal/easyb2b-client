@@ -15,10 +15,72 @@ function Description() {
               </figure>
             </div>
             <div className="text-center img-container col-1 p-1 pt-2 m-auto">
-              <a href=""><img src="assets/icons/magnifying-glass-solid.svg" className="description-image-icon" alt="Description" /></a>
+              <a href="#"><img src="assets/icons/magnifying-glass-solid.svg" className="description-image-icon" alt="Description" /></a>
             </div>
           </div>
-          <div className="col-6"></div>
+
+
+
+          <div className="col-6 pb-5 pt-4">
+            <div className="row pb-3">
+              <h4 className="font-weight-bolder"><b>PAP A4 CERT.FSC GIMBA 210X297 CX5000 75G</b></h4>
+            </div>
+            <div className="row">
+              <p className="font-weight-bolder">
+                <b>ID: </b>905
+                <br />
+                <b>CÓD. SUPRICORP: </b> 1109319
+                <br />
+                <b>MARCA: </b> GIMBA
+                <br />
+                <br />
+                <b>CONDIÇÕES PARA COMPRA</b>
+                <br />
+                <br />
+                <b>PEDIDO MÍNIMO: </b> 1 UNIDADE
+                <br />
+                <b>FORMA DE PAGAMENTO: </b>BOLETO - 45 DIAS
+                <br />
+                <b>PRAZO DE ENTREGA APROXIMADO: </b>3 DIAS ÚTEIS
+                <br />
+                <small className="font-weight-light">
+                  Obs: Esse tempo é de responsabilidade do fornecedor, pode variar de acordo com seu fluxo de pedidos.
+                </small>
+                <br />
+                <br />
+                <br />
+              </p>
+            </div>
+
+            <div className="row">
+              <div className="col-4 d-flex justify-content-between align-items-center">
+                <p className=" pt-1" style={{color: "orange"}}>
+                  <b style={{textDecoration: "underline"}}>
+                    Unid
+                  </b>
+                  &#160;&#160;&#160;&#160;&#160;
+                  <b style={{fontSize: "1.8rem"}}>R$ 192,45</b>
+                </p>
+              </div>
+
+              <div className="col-3 d-flex justify-content-between align-items-center" style={{fontSize: "1.7rem"}}>
+                <div>-</div>
+                <div className="number-square border border-secondary text-center">1</div>
+                <div>+</div>
+              </div>
+
+            </div>
+
+
+            <div className="row pt-5">
+              <div className="col-6 pt-3">
+                <button type="button" class="btn btn-success btn-lg">INCLUIR NO CARRINHO</button>
+              </div>
+            </div>
+          </div>
+
+
+
         </div>
       </div>
       {/* Second half */}
