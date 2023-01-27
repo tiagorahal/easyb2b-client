@@ -5,28 +5,24 @@ import Dropdown from 'react-bootstrap/Dropdown';
 
 function Description() {
   return (
-    <div className="pedidos-main">
-      <div className="pedidos container">
-        <div className="row pt-1">
-          <form className="pedidos-form pb-2">
-            <div class="row pt-4">
-              <h5 className="fw-bold">Legenda</h5>
+    <div className="description-main pt-4 pb-3">
+      <div className="description container mb-5">
+        <div className="row ">
+          <div className="col-6 pb-5">
+            <div>
+              <figure class="img-download">
+                <img src="assets/produto_2_semfundo.png" class="figure-img img-fluid rounded" alt="Product." />
+              </figure>
             </div>
-            <div class="d-flex flex-row">
-              <div className="d-flex flex-row">
-                <div className="square1"></div>
-                Pedidos de Cotação
-              </div>
-              &nbsp; &nbsp; &nbsp;
-              <div className="d-flex flex-row">
-                <div className="square2"></div>
-                Pedidos de Catálogo
-              </div>
+            <div className="text-center img-container col-1 p-1 pt-2 m-auto">
+              <a href=""><img src="assets/icons/magnifying-glass-solid.svg" className="description-image-icon" /></a>
             </div>
-          </form>
+          </div>
+          <div className="col-6"></div>
         </div>
       </div>
-      <div className="pedidos container">
+      {/* Second half */}
+      <div className="pedidos container pt-5">
         <div className="row justify-content-end my-4">
           <div className="col-12 col-sm-6 col-lg-4">
             <div className="w-100 h-100 d-flex align-items-center justify-content-end">
