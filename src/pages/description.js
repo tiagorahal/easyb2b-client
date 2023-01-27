@@ -15,7 +15,7 @@ function Description() {
               </figure>
             </div>
             <div className="text-center img-container col-1 p-1 pt-2 m-auto">
-              <a href=""><img src="assets/icons/magnifying-glass-solid.svg" className="description-image-icon" /></a>
+              <a href=""><img src="assets/icons/magnifying-glass-solid.svg" className="description-image-icon" alt="Description" /></a>
             </div>
           </div>
           <div className="col-6"></div>
@@ -53,8 +53,8 @@ function Description() {
                 </Dropdown.Menu>
               </Dropdown>
               <div className="d-flex align-items-center justify-content-around grid-type">
-                <img src="assets/icons/table-cells-solid.svg" />
-                <img src="assets/icons/list-ul-solid.svg" />
+                <img src="assets/icons/table-cells-solid.svg" alt="Description" />
+                <img src="assets/icons/list-ul-solid.svg" alt="Description" />
               </div>
             </div>
           </div>
@@ -64,7 +64,7 @@ function Description() {
             <div className="bg-white w-100 h-100">
               <div className="row">
                 <div className="col-12 p-3 d-flex justify-content-center">
-                  <img src="assets/produto_0.png" className="product-img" />
+                  <img src="assets/produto_0.png" className="product-img" alt="Description" />
                 </div>
               </div>
               <div className="row d-flex justify-content-center">
@@ -97,9 +97,9 @@ function Description() {
                 <div className="row d-flex justify-content-center">
                   <div className="col-5 d-flex justify-content-center align-items-center">
                     <p className="product-amount m-0 p-0">
-                      <img src="assets/icons/minus-solid.svg" />
+                      <img src="assets/icons/minus-solid.svg" alt="Description" />
                       <span className="amount mx-1">1</span>
-                      <img src="assets/icons/plus-solid.svg" />
+                      <img src="assets/icons/plus-solid.svg" alt="Description" />
                     </p>
                   </div>
                   <div className="col-7 p-0">
@@ -111,10 +111,10 @@ function Description() {
                 <div className="row">
                   <div className="col-12 d-flex justify-content-end product-footer-icons">
                     <Link>
-                      <img src="assets/icons/eye-solid.svg" />
+                      <img src="assets/icons/eye-solid.svg" alt="Description" />
                     </Link>
                     <button className="favorite">
-                      <img src="assets/icons/heart-regular.svg" />
+                      <img src="assets/icons/heart-regular.svg" alt="Description" />
                     </button>
                   </div>
                 </div>
@@ -125,7 +125,7 @@ function Description() {
             <div className="bg-white w-100 h-100">
               <div className="row">
                 <div className="col-12 p-3 d-flex justify-content-center">
-                  <img src="assets/produto1.jpg" className="product-img" />
+                  <img src="assets/produto1.jpg" className="product-img" alt="Description" />
                 </div>
               </div>
               <div className="row d-flex justify-content-center">
@@ -154,9 +154,9 @@ function Description() {
                 <div className="row d-flex justify-content-center">
                   <div className="col-5 d-flex justify-content-center align-items-center">
                     <p className="product-amount m-0 p-0">
-                      <img src="assets/icons/minus-solid.svg" />
+                      <img src="assets/icons/minus-solid.svg" alt="Description" />
                       <span className="amount mx-1">1</span>
-                      <img src="assets/icons/plus-solid.svg" />
+                      <img src="assets/icons/plus-solid.svg" alt="Description" />
                     </p>
                   </div>
                   <div className="col-7 p-0">
@@ -168,10 +168,10 @@ function Description() {
                 <div className="row">
                   <div className="col-12 d-flex justify-content-end product-footer-icons">
                     <Link>
-                      <img src="assets/icons/eye-solid.svg" />
+                      <img src="assets/icons/eye-solid.svg" alt="Description" />
                     </Link>
                     <button className="favorite">
-                      <img src="assets/icons/heart-regular.svg" />
+                      <img src="assets/icons/heart-regular.svg" alt="Description" />
                     </button>
                   </div>
                 </div>
@@ -182,7 +182,7 @@ function Description() {
             <div className="bg-white w-100 h-100">
               <div className="row">
                 <div className="col-12 p-3 d-flex justify-content-center">
-                  <img src="assets/produto2.jpg" className="product-img" />
+                  <img src="assets/produto2.jpg" className="product-img" alt="Description" />
                 </div>
               </div>
               <div className="row d-flex justify-content-center">
@@ -215,9 +215,9 @@ function Description() {
                 <div className="row d-flex justify-content-center">
                   <div className="col-5 d-flex justify-content-center align-items-center">
                     <p className="product-amount m-0 p-0">
-                      <img src="assets/icons/minus-solid.svg" />
+                      <img src="assets/icons/minus-solid.svg" alt="Description" />
                       <span className="amount mx-1">1</span>
-                      <img src="assets/icons/plus-solid.svg" />
+                      <img src="assets/icons/plus-solid.svg" alt="Description" />
                     </p>
                   </div>
                   <div className="col-7 p-0">
@@ -229,10 +229,10 @@ function Description() {
                 <div className="row">
                   <div className="col-12 d-flex justify-content-end product-footer-icons">
                     <Link>
-                      <img src="assets/icons/eye-solid.svg" />
+                      <img src="assets/icons/eye-solid.svg" alt="Description" />
                     </Link>
                     <button className="favorite">
-                      <img src="assets/icons/heart-regular.svg" />
+                      <img src="assets/icons/heart-regular.svg" alt="Description" />
                     </button>
                   </div>
                 </div>
@@ -243,7 +243,7 @@ function Description() {
             <div className="bg-white w-100 h-100">
               <div className="row">
                 <div className="col-12 p-3 d-flex justify-content-center">
-                  <img src="assets/produto3.png" className="product-img" />
+                  <img src="assets/produto3.png" className="product-img" alt="Description" />
                 </div>
               </div>
               <div className="row d-flex justify-content-center">
@@ -272,9 +272,9 @@ function Description() {
                 <div className="row d-flex justify-content-center">
                   <div className="col-5 d-flex justify-content-center align-items-center">
                     <p className="product-amount m-0 p-0">
-                      <img src="assets/icons/minus-solid.svg" />
+                      <img src="assets/icons/minus-solid.svg" alt="Description" />
                       <span className="amount mx-1">1</span>
-                      <img src="assets/icons/plus-solid.svg" />
+                      <img src="assets/icons/plus-solid.svg" alt="Description" />
                     </p>
                   </div>
                   <div className="col-7 p-0">
@@ -286,10 +286,10 @@ function Description() {
                 <div className="row">
                   <div className="col-12 d-flex justify-content-end product-footer-icons">
                     <Link>
-                      <img src="assets/icons/eye-solid.svg" />
+                      <img src="assets/icons/eye-solid.svg" alt="Description" />
                     </Link>
                     <button className="favorite">
-                      <img src="assets/icons/heart-regular.svg" />
+                      <img src="assets/icons/heart-regular.svg" alt="Description" />
                     </button>
                   </div>
                 </div>
