@@ -1,0 +1,27 @@
+.description-main {
+  background-color: #edf0f5;
+}
+
+.description {
+  background-color: #ffff;
+}
+
+.description-image-icon {
+  max-height: 38px;
+  padding-bottom: 1vh;
+  color: white;
+}
+
+.img-container {
+  background-color: rgba(128, 128, 128, 0.445);
+}
+
+.number-square {
+  min-width: 70px;
+  border: black;
+}
+
+.bottom-text-description {
+  font-weight: bolder;
+  opacity: 50%;
+}

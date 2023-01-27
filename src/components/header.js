@@ -187,7 +187,6 @@ function Header(){
                             <div className="col text-center">Item de Menu</div>
                             <div className="col text-center">Item de Menu</div>
                             <div className="col text-center">Item de Menu</div>
-                            <div className="col text-center">Item de Menu</div>
                         </div>
                     </div>
                 </div>
