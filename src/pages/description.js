@@ -86,38 +86,9 @@ function Description() {
       {/* Second half */}
       <div className="pedidos container pt-5">
         <div className="row justify-content-end my-4">
-          <div className="col-12 col-sm-6 col-lg-4">
-            <div className="w-100 h-100 d-flex align-items-center justify-content-end">
-              <Dropdown className="product-dropdowns">
-                <Dropdown.Toggle
-                  className="select-grid"
-                  align="center"
-                  id="dropdown-basic"
-                >
-                  <span>16</span>
-                </Dropdown.Toggle>
-                <Dropdown.Menu className="product-grid-dropdown">
-                  <p>24</p>
-                  <p className="mb-1">36</p>
-                </Dropdown.Menu>
-              </Dropdown>
-              <Dropdown className="product-dropdowns">
-                <Dropdown.Toggle
-                  className="select-grid select2"
-                  align="center"
-                  id="dropdown-basic"
-                >
-                  <span>MAIS VENDIDOS</span>
-                </Dropdown.Toggle>
-                <Dropdown.Menu className="product-grid-dropdown2">
-                  <p>MENOR PREÇO</p>
-                  <p className="mb-1">MAIS RECENTES</p>
-                </Dropdown.Menu>
-              </Dropdown>
-              <div className="d-flex align-items-center justify-content-around grid-type">
-                <img src="assets/icons/table-cells-solid.svg" alt="Description" />
-                <img src="assets/icons/list-ul-solid.svg" alt="Description" />
-              </div>
+          <div className="col-12">
+            <div className="w-100 h-100 d-flex align-items-center justify-content-start">
+              <h4 className="bottom-text-description">RELACIONADOS</h4>
             </div>
           </div>
         </div>
