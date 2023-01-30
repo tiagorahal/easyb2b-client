@@ -506,8 +506,8 @@
     position: absolute;
     display: none;
     width: 440px;
-    right: 14rem;
     z-index: 1;
+    top: 4rem;
 }
 .user-profile-hover:hover .user-dropdown{
     display: block;
