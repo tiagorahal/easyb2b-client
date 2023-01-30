@@ -24,7 +24,7 @@ function Header(){
                         </div>
                     </div>
                     {/* User profile */}
-                    <div className="col-auto user-profile-hover">
+                    <div className="col-auto user-profile-hover d-flex justify-content-center">
                         <div className="row align-items-center justify-content-center">
                             <div className="col-5 space-fix">
                                 <img src="assets/perfil.png" className="profile-pic rounded-circle text-right"/>
@@ -88,7 +88,7 @@ function Header(){
                     <div className="col d-inline-block cart-header-hover">
 
                                 <div className="row align-items-center justify-content-center cart-dropdown">
-                                    <div className="col-3 px-1">
+                                    <div className="col-3 px-1 text-center">
                                         <img src="assets/icons/cart-shopping-solid.svg" className="cart-icon" />
                                         <div className="badge">
                                             <span className="badge-value">1</span>
