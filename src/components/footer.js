@@ -42,7 +42,7 @@ const Footer = () => (
                     <img className="foot-img" src="assets/secure.png" alt='nothing' />
                 </div>
                 <div className="foot-address">
-                    <p>Copyright - 2019 | EasyB2B - suporte@easyb2b.io <br /> (011) 2500-5555 Alameda Vicente Pinzon, 54 - Vila Olímpia, São Paulo - SP, 04547-130</p>
+                    <p>Copyright - 2023 | EasyB2B - suporte@easyb2b.io <br /> (011) 2500-5555 Alameda Vicente Pinzon, 54 - Vila Olímpia, São Paulo - SP, 04547-130</p>
                 </div>
             </div>
         </div>
