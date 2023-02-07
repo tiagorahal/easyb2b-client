@@ -176,9 +176,9 @@ function Header(){
                     <div className="col-1">
                         <div className="row align-items-center justify-content-center">
                             <div className="col-3">
-                                <img src="assets/icons/align-right-solid.svg" className="filter-icon" />
+                                <img src="assets/icons/filter-solid.svg" className="filter-icon" />
                             </div>
-                            <div className="col-9">
+                            <div className="col-9 p-1">
                                 <p className="filter m-0">Filtro</p>
                             </div>
                         </div>
