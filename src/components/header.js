@@ -43,7 +43,7 @@ function Header(){
                                 <div className="dropdown-point"></div>
                                 <div className="row">
                                     <div className="col-6 mb-3 user-dropdown-options">
-                                        <img src="assets/icons/gear-solid.svg" /> Painel de Cotrole
+                                        <Link to="/ControlPanel" className="user-link"><img src="assets/icons/gear-solid.svg" /> Painel de Cotrole</Link>
                                     </div>
                                     <div className="col-6 mb-3 user-dropdown-options">
                                         <img src="assets/icons/check-solid.svg" /> Aprovação de Pedidos
