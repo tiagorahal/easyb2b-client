@@ -43,7 +43,7 @@ function Header(){
                                 <div className="dropdown-point"></div>
                                 <div className="row">
                                     <div className="col-6 mb-3 user-dropdown-options">
-                                        <img src="assets/icons/gear-solid.svg" /> Painel de Cotrole
+                                        <Link to="/ControlPanel" className="user-link"><img src="assets/icons/gear-solid.svg" /> Painel de Cotrole</Link>
                                     </div>
                                     <div className="col-6 mb-3 user-dropdown-options">
                                         <img src="assets/icons/check-solid.svg" /> Aprovação de Pedidos
@@ -176,9 +176,9 @@ function Header(){
                     <div className="col-1">
                         <div className="row align-items-center justify-content-center">
                             <div className="col-3">
-                                <img src="assets/icons/align-right-solid.svg" className="filter-icon" />
+                                <img src="assets/icons/filter-solid.svg" className="filter-icon" />
                             </div>
-                            <div className="col-9">
+                            <div className="col-9 p-1">
                                 <p className="filter m-0">Filtro</p>
                             </div>
                         </div>

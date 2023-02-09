@@ -34,11 +34,6 @@
     background-color: white;
     color: #adaeba;
 }
-.select-grid:active, .show{
-    background-color: white !important;
-    color: #adaeba !important;
-    border-radius: 20px;
-}
 .product-grid-dropdown{
     text-align: center;
     min-width: 60px;
@@ -47,6 +42,8 @@
 }
 .select2{
     min-width: 130px;
+    background-color: white !important;
+    color: #adaeba !important;
 }
 .product-dropdowns{
     margin-right: 10px;

@@ -7,6 +7,7 @@ import Checkout from './pages/checkout';
 import Pedidos from './pages/pedidos';
 import ProductsList from './pages/productsList';
 import Description from './pages/description';
+import ControlPanel from './pages/controlPanel';
 
 
 import React, { Component } from 'react';
@@ -24,6 +25,7 @@ class App extends Component {
           <Route path="/pedidos" element={<Pedidos />} />
           <Route path="/productsList" element={<ProductsList />} />
           <Route path="/description" element={<Description />} />
+          <Route path="/controlPanel" element={<ControlPanel />} />
         </Routes>
 
         <Footer />
