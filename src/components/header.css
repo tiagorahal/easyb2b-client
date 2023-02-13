@@ -304,7 +304,8 @@
     height: 500px;
     width: 790px;
     border-right: 8px solid #5b6ae8;
-    background-color: #f6f7fa;
+    background-color: #f6f7fa !important;
+    border-radius: 3px !important;
 }
 .btn-cart2{
     background-color: #3fa4f1;
@@ -326,13 +327,15 @@
     height: 500px;
     width: 790px;
     border-right: 8px solid #428cc4;
-    background-color: #f6f7fa;
+    background-color: #f6f7fa !important;
+    border-radius: 3px !important;
 }
 .drop-float-menu2{
     height: 500px;
     width: 790px;
     border-right: 8px solid #3fa4f1;
-    background-color: #f6f7fa;
+    background-color: #f6f7fa !important;
+    border-radius: 3px !important;
 }
 .btn-more-details{
     border: 1px solid #5b6ae8;

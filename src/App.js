@@ -3,11 +3,12 @@ import "react-step-progress-bar/styles.css";
 import Footer from "./components/footer";
 import Header from "./components/header";
 
-import Home from "./pages/home";
-import Checkout from "./pages/checkout";
-import Pedidos from "./pages/pedidos";
-import ProductsList from "./pages/productsList";
-import Description from "./pages/description";
+import Home from './pages/home';
+import Checkout from './pages/checkout';
+import Pedidos from './pages/pedidos';
+import ProductsList from './pages/productsList';
+import Description from './pages/description';
+import ControlPanel from './pages/controlPanel';
 import OrderDetails from "./pages/orderDetails";
 
 import React, { Component } from "react";
@@ -31,6 +32,7 @@ class App extends Component {
           <Route path="/productsList" element={<ProductsList />} />
           <Route path="/description" element={<Description />} />
           <Route path="/orderDetails" element={<OrderDetails />} />
+          <Route path="/controlPanel" element={<ControlPanel />} />
         </Routes>
 
         <Footer />

@@ -309,45 +309,55 @@ function Header() {
                     <div className="bar">
                       <div className="progress-bar"></div>
                     </div>
-                    <img
-                      src="assets/icons/question-solid.svg"
-                      className="question-svg"
-                    />
-                  </div>
-                  <div className="cel1 d-flex justify-content-center cel1-stars">
-                    <img src="assets/icons/star-solid.svg" />
-                    <img src="assets/icons/star-solid.svg" />
-                    <img src="assets/icons/star-solid.svg" />
-                    <img src="assets/icons/star-solid.svg" />
-                    <img src="assets/icons/star-regular.svg" />
-                  </div>
-                  <div className="cel16">
-                    <button className="btn-buy">
-                      <img src="assets/icons/cart-shopping-white.svg" />
-                      COMPRAR
-                    </button>
-                  </div>
-                </div>
-                <div className="table-cel col-md-3 m-0 p-0">
-                  <div className="cel10 d-grid justify-content-center align-items-center">
-                    <p className="m-0 p-0">NOME DO FORNECEDOR 2</p>
-                    <p className="m-0 p-0 cel10-price">
-                      <span className="pricers">R$ </span>
-                      <span>331,58</span>
-                    </p>
-                  </div>
-                  <div className="cel11"></div>
-                  <div className="cel1">
-                    <p className="m-0 p-0">Até 8 Vezes</p>
-                    <span>sem juros</span>
-                  </div>
-                  <div className="cel1">
-                    <p className="m-0 p-0">12 dias úteis</p>
-                    <span>PAC</span>
-                  </div>
-                  <div className="cel1 d-flex justify-content-evenly">
-                    <div className="bar">
-                      <div className="progress-bar"></div>
+                    {/* User profile */}
+                    <div className="col-auto user-profile-hover d-flex justify-content-center">
+                        <div className="row align-items-center justify-content-center">
+                            <div className="col-5 space-fix">
+                                <img src="assets/perfil.png" className="profile-pic rounded-circle text-right"/>
+                            </div>
+                            <div className="col-7 px-2">
+                                <p className="username">Olá, Usuário</p>
+                                <div className="d-flex align-items-center my-account-login">
+                                    <p>minha conta</p>  
+                                </div>
+                            </div>  
+                        </div>
+                        {/* User profile dropdown menu */}
+                        <div className="user-dropdown">
+                            <div className="space"></div>
+                            <div className="p-4 bg-white border-drop-user">
+                                <div className="dropdown-point"></div>
+                                <div className="row">
+                                    <div className="col-6 mb-3 user-dropdown-options">
+                                        <Link to="/ControlPanel" className="user-link"><img src="assets/icons/gear-solid.svg" /> Painel de Cotrole</Link>
+                                    </div>
+                                    <div className="col-6 mb-3 user-dropdown-options">
+                                        <img src="assets/icons/check-solid.svg" /> Aprovação de Pedidos
+                                    </div>
+                                    <div className="col-6 mb-3 user-dropdown-options">
+                                        <Link to="/Pedidos" className="user-link"><img src="assets/icons/paper.svg" /> Meus Pedidos</Link>
+                                    </div>
+                                    <div className="col-6 mb-3 user-dropdown-options">
+                                        <img src="assets/icons/chart-line-solid.svg" /> Relatórios
+                                    </div>
+                                    <div className="col-6 mb-3 user-dropdown-options">
+                                        <img src="assets/icons/file-import-solid.svg" /> Importar Pedidos
+                                    </div>
+                                    <div className="col-6 mb-3 user-dropdown-options">
+                                        <img src="assets/icons/link-solid.svg" /> Links úteis
+                                    </div>
+                                    <div className="col-6 mb-3 user-dropdown-options">
+                                        <img src="assets/icons/file-export-solid.svg" /> Exportações
+                                    </div>
+                                    <div className="col-6 mb-3"></div>
+                                    <div className="col-12 p-4 pb-0 d-flex justify-content-around align-items-center btn-user-dropdown">
+                                        <button>MEU PERFIL</button>
+                                        <button>SUPORTE</button>
+                                        <button>SAIR</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
                     </div>
                     <img
                       src="assets/icons/question-solid.svg"
@@ -459,6 +469,7 @@ function Header() {
                 </div>
                 <div className="table-cel col-md-3 m-0 p-0">
                   <div className="cel10 d-grid justify-content-center align-items-center">
+
                     <p className="m-0 p-0">NOME DO FORNECEDOR 1</p>
                     <p className="m-0 p-0 cel10-price">
                       <span className="pricers">R$ </span>
@@ -497,26 +508,19 @@ function Header() {
                     </button>
                   </div>
                 </div>
-                <div className="table-cel col-md-3 m-0 p-0">
-                  <div className="cel10 d-grid justify-content-center align-items-center">
-                    <p className="m-0 p-0">NOME DO FORNECEDOR 2</p>
-                    <p className="m-0 p-0 cel10-price">
-                      <span className="pricers">R$ </span>
-                      <span>331,58</span>
-                    </p>
-                  </div>
-                  <div className="cel11"></div>
-                  <div className="cel1">
-                    <p className="m-0 p-0">Até 8 Vezes</p>
-                    <span>sem juros</span>
-                  </div>
-                  <div className="cel1">
-                    <p className="m-0 p-0">12 dias úteis</p>
-                    <span>PAC</span>
-                  </div>
-                  <div className="cel1 d-flex justify-content-evenly">
-                    <div className="bar">
-                      <div className="progress-bar"></div>
+            </div>
+            {/* Menu navbar */}
+            <div className="header menu py-2 px-5">
+                <div className="row">
+                    <div className="col-1">
+                        <div className="row align-items-center justify-content-center">
+                            <div className="col-3">
+                                <img src="assets/icons/filter-solid.svg" className="filter-icon" />
+                            </div>
+                            <div className="col-9 p-1">
+                                <p className="filter m-0">Filtro</p>
+                            </div>
+                        </div>
                     </div>
                     <img
                       src="assets/icons/question-solid.svg"
