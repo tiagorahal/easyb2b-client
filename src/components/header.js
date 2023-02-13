@@ -36,7 +36,7 @@ function Header() {
             </div>
           </div>
           {/* User profile */}
-          <div className="col-auto user-profile-hover d-flex justify-content-center">
+          <div className="col-auto user-profile-hover">
             <div className="row align-items-center justify-content-center">
               <div className="col-5 space-fix">
                 <img
@@ -44,7 +44,7 @@ function Header() {
                   className="profile-pic rounded-circle text-right"
                 />
               </div>
-              <div className="col-7 px-2">
+              <div className="col-7">
                 <p className="username">Olá, Usuário</p>
                 <div className="d-flex align-items-center my-account-login">
                   <p>minha conta</p>
@@ -54,7 +54,7 @@ function Header() {
             {/* User profile dropdown menu */}
             <div className="user-dropdown">
               <div className="space"></div>
-              <div className="p-4 bg-white border-drop-user">
+              <div className="p-4 mt-2 bg-white border-drop-user">
                 <div className="dropdown-point"></div>
                 <div className="row">
                   <div className="col-6 mb-3 user-dropdown-options">
@@ -107,9 +107,9 @@ function Header() {
             </div>
           </div>
           {/* Cart info */}
-          <div className="col d-flex cart-header-hover justify-content-center">
-            <div className="row align-items-center justify-content-center cart-dropdown w-100">
-              <div className="col-3 px-1 text-center">
+          <div className="col d-inline-block cart-header-hover">
+            <div className="row align-items-center justify-content-center cart-dropdown">
+              <div className="col-3 px-1">
                 <img
                   src="assets/icons/cart-shopping-solid.svg"
                   className="cart-icon"
@@ -133,77 +133,73 @@ function Header() {
             </div>
 
             <div className="drop-menu p-0">
-              <div className="space transparent"></div>
-              <div className="cart-box">
-                <div className="dropdown-point-cart"></div>
-                <div className="cart-dropdown-header">
-                  <h3 className="pt-3">Meu carrinho</h3>
-                  <p>Saldo: R$630.00</p>
-                </div>
-                <div className="cart-dropdown-products">
-                  <div className="cart-product d-flex justify-content-center mb-2">
-                    <div className="cart-product-img">
-                      <img src="assets/produto_0.png" />
-                    </div>
-                    <div className="cart-product-name px-1">
-                      <label className="d-inline-block">
-                        BOBINA PARA CALCULADORA
-                      </label>
-                      <span>Quantidade: 3</span>
-                      <p>R$128,20</p>
-                    </div>
-                    <div className="cart-product-delete d-grid align-content-center px-1">
-                      <button>
-                        <img src="assets/icons/close.svg" />
-                      </button>
-                    </div>
+              <div className="cart-dropdown-header">
+                <h3>Meu carrinho</h3>
+                <p>Saldo: R$630.00</p>
+              </div>
+              <div className="cart-dropdown-products">
+                <div className="cart-product d-flex justify-content-center mb-2">
+                  <div className="cart-product-img">
+                    <img src="assets/produto_0.png" />
                   </div>
-                  <div className="cart-product d-flex justify-content-center mb-2">
-                    <div className="cart-product-img">
-                      <img src="assets/produto1.jpg" />
-                    </div>
-                    <div className="cart-product-name px-1">
-                      <label className="d-inline-block">
-                        BOBINA PARA CALCULADORA
-                      </label>
-                      <span>Quantidade: 3</span>
-                      <p>R$128,20</p>
-                    </div>
-                    <div className="cart-product-delete d-grid align-content-center px-1">
-                      <button>
-                        <img src="assets/icons/close.svg" />
-                      </button>
-                    </div>
+                  <div className="cart-product-name px-1">
+                    <label className="d-inline-block">
+                      BOBINA PARA CALCULADORA
+                    </label>
+                    <span>Quantidade: 3</span>
+                    <p>R$128,20</p>
                   </div>
-                  <div className="cart-product d-flex justify-content-center mb-2">
-                    <div className="cart-product-img">
-                      <img src="assets/produto2.jpg" />
-                    </div>
-                    <div className="cart-product-name px-1">
-                      <label className="d-inline-block">
-                        BOBINA PARA CALCULADORA
-                      </label>
-                      <span>Quantidade: 3</span>
-                      <p>R$128,20</p>
-                    </div>
-                    <div className="cart-product-delete d-grid align-content-center px-1">
-                      <button>
-                        <img src="assets/icons/close.svg" />
-                      </button>
-                    </div>
+                  <div className="cart-product-delete d-grid align-content-center px-1">
+                    <button>
+                      <img src="assets/icons/close.svg" />
+                    </button>
                   </div>
                 </div>
-                <div className="cart-dropdown-total">
-                  <div className="d-flex align-items-center">
-                    <p className="d-block">Total</p>
-                    <p className="d-block">R$7.230,00</p>
+                <div className="cart-product d-flex justify-content-center mb-2">
+                  <div className="cart-product-img">
+                    <img src="assets/produto1.jpg" />
                   </div>
-                  <div className="d-flex align-items-center justify-content-around mt-2">
-                    <Link to="/Checkout" className="btn-cart-link">
-                      <button className="btn-finish w-100">Finalizar</button>
-                    </Link>
-                    <button className="btn-basket">Editar cesta</button>
+                  <div className="cart-product-name px-1">
+                    <label className="d-inline-block">
+                      BOBINA PARA CALCULADORA
+                    </label>
+                    <span>Quantidade: 3</span>
+                    <p>R$128,20</p>
                   </div>
+                  <div className="cart-product-delete d-grid align-content-center px-1">
+                    <button>
+                      <img src="assets/icons/close.svg" />
+                    </button>
+                  </div>
+                </div>
+                <div className="cart-product d-flex justify-content-center mb-2">
+                  <div className="cart-product-img">
+                    <img src="assets/produto2.jpg" />
+                  </div>
+                  <div className="cart-product-name px-1">
+                    <label className="d-inline-block">
+                      BOBINA PARA CALCULADORA
+                    </label>
+                    <span>Quantidade: 3</span>
+                    <p>R$128,20</p>
+                  </div>
+                  <div className="cart-product-delete d-grid align-content-center px-1">
+                    <button>
+                      <img src="assets/icons/close.svg" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="cart-dropdown-total">
+                <div className="d-flex align-items-center">
+                  <p className="d-block">Total</p>
+                  <p className="d-block">R$7.230,00</p>
+                </div>
+                <div className="d-flex align-items-center justify-content-around mt-2">
+                  <Link to="/Checkout" className="btn-cart-link">
+                    <button className="btn-finish w-100">Finalizar</button>
+                  </Link>
+                  <button className="btn-basket">Editar cesta</button>
                 </div>
               </div>
             </div>
@@ -229,15 +225,14 @@ function Header() {
           </div>
           <div className="col-11 white align-self-center">
             <div className="row align-items-center justify-content-center menu-item">
-              <div className="col-auto text-center">
-                COMPRE POR DEPARTAMENTO
-              </div>
+              <div className="col-auto">COMPRE POR DEPARTAMENTO</div>
               <Link
                 to="/ProductsList"
                 className="col text-center btn-products-link"
               >
                 Produtos
               </Link>
+              <div className="col text-center">Item de Menu</div>
               <div className="col text-center">Item de Menu</div>
               <div className="col text-center">Item de Menu</div>
               <div className="col text-center">Item de Menu</div>
@@ -650,18 +645,19 @@ function Header() {
                     <img
                       src="assets/icons/question-solid.svg"
                       className="question-svg"
+                      alt=""
                     />
                   </div>
                   <div className="cel1 d-flex justify-content-center cel1-stars">
-                    <img src="assets/icons/star-solid.svg" />
-                    <img src="assets/icons/star-solid.svg" />
-                    <img src="assets/icons/star-solid.svg" />
-                    <img src="assets/icons/star-solid.svg" />
-                    <img src="assets/icons/star-regular.svg" />
+                    <img src="assets/icons/star-solid.svg" alt="" />
+                    <img src="assets/icons/star-solid.svg" alt="" />
+                    <img src="assets/icons/star-solid.svg" alt="" />
+                    <img src="assets/icons/star-solid.svg" alt="" />
+                    <img src="assets/icons/star-regular.svg" alt="" />
                   </div>
                   <div className="cel16">
                     <button className="btn-buy">
-                      <img src="assets/icons/cart-shopping-white.svg" />
+                      <img src="assets/icons/cart-shopping-white.svg" alt="" />
                       COMPRAR
                     </button>
                   </div>
@@ -690,18 +686,19 @@ function Header() {
                     <img
                       src="assets/icons/question-solid.svg"
                       className="question-svg"
+                      alt=""
                     />
                   </div>
                   <div className="cel1 d-flex justify-content-center cel1-stars">
-                    <img src="assets/icons/star-solid.svg" />
-                    <img src="assets/icons/star-solid.svg" />
-                    <img src="assets/icons/star-solid.svg" />
-                    <img src="assets/icons/star-solid.svg" />
-                    <img src="assets/icons/star-regular.svg" />
+                    <img src="assets/icons/star-solid.svg" alt="" />
+                    <img src="assets/icons/star-solid.svg" alt="" />
+                    <img src="assets/icons/star-solid.svg" alt="" />
+                    <img src="assets/icons/star-solid.svg" alt="" />
+                    <img src="assets/icons/star-regular.svg" alt="" />
                   </div>
                   <div className="cel16">
                     <button className="btn-buy">
-                      <img src="assets/icons/cart-shopping-white.svg" />
+                      <img src="assets/icons/cart-shopping-white.svg" alt="" />
                       COMPRAR
                     </button>
                   </div>
@@ -730,18 +727,19 @@ function Header() {
                     <img
                       src="assets/icons/question-solid.svg"
                       className="question-svg"
+                      alt=""
                     />
                   </div>
                   <div className="cel1 d-flex justify-content-center cel1-stars">
-                    <img src="assets/icons/star-solid.svg" />
-                    <img src="assets/icons/star-solid.svg" />
-                    <img src="assets/icons/star-solid.svg" />
-                    <img src="assets/icons/star-solid.svg" />
-                    <img src="assets/icons/star-regular.svg" />
+                    <img src="assets/icons/star-solid.svg" alt="" />
+                    <img src="assets/icons/star-solid.svg" alt="" />
+                    <img src="assets/icons/star-solid.svg" alt="" />
+                    <img src="assets/icons/star-solid.svg" alt="" />
+                    <img src="assets/icons/star-regular.svg" alt="" />
                   </div>
                   <div className="cel16">
                     <button className="btn-buy-select">
-                      <img src="assets/icons/cart-shopping-white.svg" />
+                      <img src="assets/icons/cart-shopping-white.svg" alt="" />
                       COMPRAR
                     </button>
                   </div>

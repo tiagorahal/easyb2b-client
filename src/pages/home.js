@@ -1,13 +1,6 @@
-import React from 'react';
+import React from "react";
 import "./home.css";
 
-const Home = () => (
+const Home = () => <div className="temporary"></div>;
 
-    <div className="temporary">
-
-
-    </div>
-
-)
-
-export default Home
+export default Home;

@@ -1,19 +1,25 @@
-import './App.css';
-import Footer from './components/footer';
-import Header from './components/header';
+import "./App.css";
+import "react-step-progress-bar/styles.css";
+import Footer from "./components/footer";
+import Header from "./components/header";
 
-import Home from './pages/home';
-import Checkout from './pages/checkout';
-import Pedidos from './pages/pedidos';
-import ProductsList from './pages/productsList';
-import Description from './pages/description';
+import Home from "./pages/home";
+import Checkout from "./pages/checkout";
+import Pedidos from "./pages/pedidos";
+import ProductsList from "./pages/productsList";
+import Description from "./pages/description";
+import OrderDetails from "./pages/orderDetails";
 
-
-import React, { Component } from 'react';
-import { Route, BrowserRouter as Router, Routes, Navigate} from "react-router-dom";
+import React, { Component } from "react";
+import {
+  Route,
+  BrowserRouter as Router,
+  Routes,
+  Navigate,
+} from "react-router-dom";
 
 class App extends Component {
-  render(){
+  render() {
     return (
       <div className="app">
         <Header />
@@ -24,6 +30,7 @@ class App extends Component {
           <Route path="/pedidos" element={<Pedidos />} />
           <Route path="/productsList" element={<ProductsList />} />
           <Route path="/description" element={<Description />} />
+          <Route path="/orderDetails" element={<OrderDetails />} />
         </Routes>
 
         <Footer />
