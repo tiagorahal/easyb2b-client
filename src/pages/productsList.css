@@ -142,11 +142,23 @@
     color: white;
     outline: none !important;
     border: none;
-    font-size: 10px;
     padding: 10px 15px;
     border-radius: 4px;
     background-color: #313457;
 }
+
+@media only screen and (max-width: 1200px){
+    .btn-add-cart{
+        font-size: 0.5rem;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .btn-add-cart{
+        font-size: 10px;
+    }
+}
+
 .product-footer-icons img{
     width: 20px;
     margin-left: 10px;

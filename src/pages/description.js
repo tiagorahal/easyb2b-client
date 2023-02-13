@@ -1,7 +1,7 @@
 import React from "react";
 import "./description.css";
 import { Link } from "react-router-dom";
-import Dropdown from 'react-bootstrap/Dropdown';
+import Dropdown from "react-bootstrap/Dropdown";
 
 function Description() {
   return (
@@ -11,19 +11,29 @@ function Description() {
           <div className="col-6 pb-5">
             <div>
               <figure class="img-download">
-                <img src="assets/produto_2_semfundo.png" class="figure-img img-fluid rounded" alt="Product." />
+                <img
+                  src="assets/produto_2_semfundo.png"
+                  class="figure-img img-fluid rounded"
+                  alt="Product."
+                />
               </figure>
             </div>
             <div className="text-center img-container col-1 p-1 pt-2 m-auto">
-              <a href="#"><img src="assets/icons/magnifying-glass-solid.svg" className="description-image-icon" alt="Description" /></a>
+              <a href="#">
+                <img
+                  src="assets/icons/magnifying-glass-solid.svg"
+                  className="m-auto description-image-icon"
+                  alt="Description"
+                />
+              </a>
             </div>
           </div>
 
-
-
           <div className="col-6 pb-5 pt-4">
             <div className="row pb-3">
-              <h4 className="font-weight-bolder"><b>PAP A4 CERT.FSC GIMBA 210X297 CX5000 75G</b></h4>
+              <h4 className="font-weight-bolder">
+                <b>PAP A4 CERT.FSC GIMBA 210X297 CX5000 75G</b>
+              </h4>
             </div>
             <div className="row">
               <p className="font-weight-bolder">
@@ -44,7 +54,8 @@ function Description() {
                 <b>PRAZO DE ENTREGA APROXIMADO: </b>3 DIAS ÚTEIS
                 <br />
                 <small className="font-weight-light">
-                  Obs: Esse tempo é de responsabilidade do fornecedor, pode variar de acordo com seu fluxo de pedidos.
+                  Obs: Esse tempo é de responsabilidade do fornecedor, pode
+                  variar de acordo com seu fluxo de pedidos.
                 </small>
                 <br />
                 <br />
@@ -54,33 +65,36 @@ function Description() {
 
             <div className="row">
               <div className="col-4 d-flex justify-content-between align-items-center">
-                <p className=" pt-1" style={{color: "orange"}}>
-                  <b style={{textDecoration: "underline"}}>
-                    Unid
-                  </b>
+                <p className=" pt-1" style={{ color: "orange" }}>
+                  <b style={{ textDecoration: "underline" }}>Unid</b>
                   &#160;&#160;&#160;&#160;&#160;
-                  <b style={{fontSize: "1.8rem"}}>R$ 192,45</b>
+                  <b style={{ fontSize: "1.8rem" }}>R$ 192,45</b>
                 </p>
               </div>
 
-              <div className="col-3 d-flex justify-content-between align-items-center" style={{fontSize: "1.7rem"}}>
+              <div
+                className="col-3 d-flex justify-content-between align-items-center"
+                style={{ fontSize: "1.7rem" }}
+              >
                 <div>-</div>
-                <div className="number-square border border-secondary text-center">1</div>
+                <div className="number-square border border-secondary text-center">
+                  1
+                </div>
                 <div>+</div>
               </div>
-
             </div>
-
 
             <div className="row pt-5">
               <div className="col-6 pt-3">
-                <button type="button" class="btn btn-success btn-lg">INCLUIR NO CARRINHO</button>
+                <button
+                  type="button"
+                  class="btn btn-success btn-lg bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+                >
+                  INCLUIR NO CARRINHO
+                </button>
               </div>
             </div>
           </div>
-
-
-
         </div>
       </div>
       {/* Second half */}
@@ -97,7 +111,11 @@ function Description() {
             <div className="bg-white w-100 h-100">
               <div className="row">
                 <div className="col-12 p-3 d-flex justify-content-center">
-                  <img src="assets/produto_0.png" className="product-img" alt="Description" />
+                  <img
+                    src="assets/produto_0.png"
+                    className="product-img"
+                    alt="Description"
+                  />
                 </div>
               </div>
               <div className="row d-flex justify-content-center">
@@ -130,9 +148,19 @@ function Description() {
                 <div className="row d-flex justify-content-center">
                   <div className="col-5 d-flex justify-content-center align-items-center">
                     <p className="product-amount m-0 p-0">
-                      <img src="assets/icons/minus-solid.svg" alt="Description" />
-                      <span className="amount mx-1">1</span>
-                      <img src="assets/icons/plus-solid.svg" alt="Description" />
+                      <div
+                        className="col-3 d-flex justify-content-between align-items-center px-5"
+                        style={{ fontSize: "1rem" }}
+                      >
+                        <div className="px-2">-</div>
+                        <div
+                          className="border border-secondary text-center px-2 bg-white"
+                          style={{ fontSize: "0.9rem" }}
+                        >
+                          1
+                        </div>
+                        <div className="px-2">+</div>
+                      </div>
                     </p>
                   </div>
                   <div className="col-7 p-0">
@@ -144,10 +172,17 @@ function Description() {
                 <div className="row">
                   <div className="col-12 d-flex justify-content-end product-footer-icons">
                     <Link>
-                      <img src="assets/icons/eye-solid.svg" alt="Description" />
+                      <img
+                        src="assets/icons/eye-solid.svg"
+                        alt="Description"
+                        className="m-auto"
+                      />
                     </Link>
                     <button className="favorite">
-                      <img src="assets/icons/heart-regular.svg" alt="Description" />
+                      <img
+                        src="assets/icons/heart-regular.svg"
+                        alt="Description"
+                      />
                     </button>
                   </div>
                 </div>
@@ -158,7 +193,11 @@ function Description() {
             <div className="bg-white w-100 h-100">
               <div className="row">
                 <div className="col-12 p-3 d-flex justify-content-center">
-                  <img src="assets/produto1.jpg" className="product-img" alt="Description" />
+                  <img
+                    src="assets/produto1.jpg"
+                    className="product-img"
+                    alt="Description"
+                  />
                 </div>
               </div>
               <div className="row d-flex justify-content-center">
@@ -187,9 +226,19 @@ function Description() {
                 <div className="row d-flex justify-content-center">
                   <div className="col-5 d-flex justify-content-center align-items-center">
                     <p className="product-amount m-0 p-0">
-                      <img src="assets/icons/minus-solid.svg" alt="Description" />
-                      <span className="amount mx-1">1</span>
-                      <img src="assets/icons/plus-solid.svg" alt="Description" />
+                      <div
+                        className="col-3 d-flex justify-content-between align-items-center px-5"
+                        style={{ fontSize: "1rem" }}
+                      >
+                        <div className="px-2">-</div>
+                        <div
+                          className="border border-secondary text-center px-2 bg-white"
+                          style={{ fontSize: "0.9rem" }}
+                        >
+                          1
+                        </div>
+                        <div className="px-2">+</div>
+                      </div>
                     </p>
                   </div>
                   <div className="col-7 p-0">
@@ -204,7 +253,10 @@ function Description() {
                       <img src="assets/icons/eye-solid.svg" alt="Description" />
                     </Link>
                     <button className="favorite">
-                      <img src="assets/icons/heart-regular.svg" alt="Description" />
+                      <img
+                        src="assets/icons/heart-regular.svg"
+                        alt="Description"
+                      />
                     </button>
                   </div>
                 </div>
@@ -215,7 +267,11 @@ function Description() {
             <div className="bg-white w-100 h-100">
               <div className="row">
                 <div className="col-12 p-3 d-flex justify-content-center">
-                  <img src="assets/produto2.jpg" className="product-img" alt="Description" />
+                  <img
+                    src="assets/produto2.jpg"
+                    className="product-img"
+                    alt="Description"
+                  />
                 </div>
               </div>
               <div className="row d-flex justify-content-center">
@@ -248,13 +304,23 @@ function Description() {
                 <div className="row d-flex justify-content-center">
                   <div className="col-5 d-flex justify-content-center align-items-center">
                     <p className="product-amount m-0 p-0">
-                      <img src="assets/icons/minus-solid.svg" alt="Description" />
-                      <span className="amount mx-1">1</span>
-                      <img src="assets/icons/plus-solid.svg" alt="Description" />
+                      <div
+                        className="col-3 d-flex justify-content-between align-items-center px-5"
+                        style={{ fontSize: "1rem" }}
+                      >
+                        <div className="px-2">-</div>
+                        <div
+                          className="border border-secondary text-center px-2 bg-white"
+                          style={{ fontSize: "0.9rem" }}
+                        >
+                          1
+                        </div>
+                        <div className="px-2">+</div>
+                      </div>
                     </p>
                   </div>
                   <div className="col-7 p-0">
-                    <button className="btn-add-cart">
+                    <button className="btn-add-cart ">
                       INCLUIR NO CARRINHO
                     </button>
                   </div>
@@ -265,7 +331,10 @@ function Description() {
                       <img src="assets/icons/eye-solid.svg" alt="Description" />
                     </Link>
                     <button className="favorite">
-                      <img src="assets/icons/heart-regular.svg" alt="Description" />
+                      <img
+                        src="assets/icons/heart-regular.svg"
+                        alt="Description"
+                      />
                     </button>
                   </div>
                 </div>
@@ -276,7 +345,11 @@ function Description() {
             <div className="bg-white w-100 h-100">
               <div className="row">
                 <div className="col-12 p-3 d-flex justify-content-center">
-                  <img src="assets/produto3.png" className="product-img" alt="Description" />
+                  <img
+                    src="assets/produto3.png"
+                    className="product-img"
+                    alt="Description"
+                  />
                 </div>
               </div>
               <div className="row d-flex justify-content-center">
@@ -305,9 +378,19 @@ function Description() {
                 <div className="row d-flex justify-content-center">
                   <div className="col-5 d-flex justify-content-center align-items-center">
                     <p className="product-amount m-0 p-0">
-                      <img src="assets/icons/minus-solid.svg" alt="Description" />
-                      <span className="amount mx-1">1</span>
-                      <img src="assets/icons/plus-solid.svg" alt="Description" />
+                      <div
+                        className="col-3 d-flex justify-content-between align-items-center px-5"
+                        style={{ fontSize: "1rem" }}
+                      >
+                        <div className="px-2">-</div>
+                        <div
+                          className="border border-secondary text-center px-2 bg-white"
+                          style={{ fontSize: "0.9rem" }}
+                        >
+                          1
+                        </div>
+                        <div className="px-2">+</div>
+                      </div>
                     </p>
                   </div>
                   <div className="col-7 p-0">
@@ -322,7 +405,10 @@ function Description() {
                       <img src="assets/icons/eye-solid.svg" alt="Description" />
                     </Link>
                     <button className="favorite">
-                      <img src="assets/icons/heart-regular.svg" alt="Description" />
+                      <img
+                        src="assets/icons/heart-regular.svg"
+                        alt="Description"
+                      />
                     </button>
                   </div>
                 </div>

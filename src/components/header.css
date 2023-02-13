@@ -102,10 +102,21 @@
 .menu{
     background-color: #313457;
 }
-.filter-icon{
-    width: 20px;
-    height: 20px;
+
+@media only screen and (max-width: 1200px){
+    .filter-icon{
+        display: none;
+    }
 }
+
+@media only screen and (min-width: 1200px){
+    .filter-icon{
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
+
 .filter{
     font-size: 0.85rem;
     color: white;
