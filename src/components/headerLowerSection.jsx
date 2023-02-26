@@ -20,7 +20,7 @@ export default function HeaderLowerSection() {
           {value === "FILTRO" && (
             <SortIcon sx={{ color: "white" }} />
           )}
-          <a href={ value === "PRODUTOS" ? 'departamentos_link' : '#'} className="">{value}</a>
+          <a href={ value === "PRODUTOS" ? '/productlist' : '#'} className="">{value}</a>
         </li>
       ))}
     </ul>
