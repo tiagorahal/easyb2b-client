@@ -1,7 +1,4 @@
 import * as React from "react";
-import AppBar from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
-import { List, ListItem, ListItemText, ListItemIcon } from "@mui/material";
 import SortIcon from "@mui/icons-material/Sort";
 
 export default function HeaderLowerSection() {
