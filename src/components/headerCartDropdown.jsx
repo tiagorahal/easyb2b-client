@@ -30,12 +30,12 @@ export default function HeaderUserDropdown() {
           <div className="">
             <Menu.Item>
               {({ active }) => (
-                <div class="max-w-sm rounded overflow-hidden shadow-lg bg-[#F1F1F1]">
-                  <div class="px-6 py-4">
-                    <div class="font-bold text-xl text-[#313457] mb-2">
+                <div className="max-w-sm rounded overflow-hidden shadow-lg bg-[#F1F1F1]">
+                  <div className="px-6 py-4">
+                    <div className="font-bold text-xl text-[#313457] mb-2">
                       Meu Carrinho
                     </div>
-                    <p class="text-[#313457] text-[0.6rem] lg:text-[0.8rem] font-bold">
+                    <p className="text-[#313457] text-[0.6rem] lg:text-[0.8rem] font-bold">
                       Saldo: R${saldoTotal}
                     </p>
                   </div>
@@ -47,19 +47,19 @@ export default function HeaderUserDropdown() {
                 <>
                   <div className="flex items-center justify-between max-w-sm border-b-4 border-[#F1F1F1] overflow-hidden shadow-lg bg-white">
                     <img
-                      class="w-24 h-24"
+                      className="w-24 h-24"
                       src={ProductImage}
                       alt="Sunset in the mountains"
                     />
-                    <div class="px-6 flex  justify-start items-center">
-                      <div class="flex flex-col justify-between items-start">
-                        <div class="text-[#313457] text-[0.6rem] lg:text-[0.8rem] font-bold pb-1">
+                    <div className="px-6 flex  justify-start items-center">
+                      <div className="flex flex-col justify-between items-start">
+                        <div className="text-[#313457] text-[0.6rem] lg:text-[0.8rem] font-bold pb-1">
                           Bobina para Calculadora
                         </div>
-                        <p class="text-gray-700 text-[0.4rem] lg:text-[0.6rem] pb-1">
+                        <p className="text-gray-700 text-[0.4rem] lg:text-[0.6rem] pb-1">
                           Quantidade: 3
                         </p>
-                        <div class="text-[#313457] text-[0.6rem] lg:text-[0.8rem] font-bold pb-1">
+                        <div className="text-[#313457] text-[0.6rem] lg:text-[0.8rem] font-bold pb-1">
                           R$128,90
                         </div>
                       </div>
@@ -68,19 +68,19 @@ export default function HeaderUserDropdown() {
                   </div>
                   <div className="flex items-center justify-between max-w-sm border-b-4 border-[#F1F1F1] overflow-hidden shadow-lg bg-white">
                     <img
-                      class="w-24 h-24"
+                      className="w-24 h-24"
                       src={ProductImage}
                       alt="Sunset in the mountains"
                     />
-                    <div class="px-6 flex  justify-start items-center">
-                      <div class="flex flex-col justify-between items-start">
-                        <div class="text-[#313457] text-[0.6rem] lg:text-[0.8rem] font-bold pb-1">
+                    <div className="px-6 flex  justify-start items-center">
+                      <div className="flex flex-col justify-between items-start">
+                        <div className="text-[#313457] text-[0.6rem] lg:text-[0.8rem] font-bold pb-1">
                           Bobina para Calculadora
                         </div>
-                        <p class="text-gray-700 text-[0.4rem] lg:text-[0.6rem] pb-1">
+                        <p className="text-gray-700 text-[0.4rem] lg:text-[0.6rem] pb-1">
                           Quantidade: 3
                         </p>
-                        <div class="text-[#313457] text-[0.6rem] lg:text-[0.8rem] font-bold pb-1">
+                        <div className="text-[#313457] text-[0.6rem] lg:text-[0.8rem] font-bold pb-1">
                           R$128,90
                         </div>
                       </div>
@@ -89,19 +89,19 @@ export default function HeaderUserDropdown() {
                   </div>
                   <div className="flex items-center justify-between max-w-sm border-b-4 border-[#F1F1F1] overflow-hidden shadow-lg bg-white">
                     <img
-                      class="w-24 h-24"
+                      className="w-24 h-24"
                       src={ProductImage}
                       alt="Sunset in the mountains"
                     />
-                    <div class="px-6 flex  justify-start items-center">
-                      <div class="flex flex-col justify-between items-start">
-                        <div class="text-[#313457] text-[0.6rem] lg:text-[0.8rem] font-bold pb-1">
+                    <div className="px-6 flex  justify-start items-center">
+                      <div className="flex flex-col justify-between items-start">
+                        <div className="text-[#313457] text-[0.6rem] lg:text-[0.8rem] font-bold pb-1">
                           Bobina para Calculadora
                         </div>
-                        <p class="text-gray-700 text-[0.4rem] lg:text-[0.6rem] pb-1">
+                        <p className="text-gray-700 text-[0.4rem] lg:text-[0.6rem] pb-1">
                           Quantidade: 3
                         </p>
-                        <div class="text-[#313457] text-[0.6rem] lg:text-[0.8rem] font-bold pb-1">
+                        <div className="text-[#313457] text-[0.6rem] lg:text-[0.8rem] font-bold pb-1">
                           R$128,90
                         </div>
                       </div>
@@ -113,16 +113,16 @@ export default function HeaderUserDropdown() {
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <div class="max-w-sm rounded overflow-hidden shadow-lg bg-[#F1F1F1]">
-                  <div class="flex justify-between items-center px-6 py-4">
-                    <div class="font-bold text-lg text-gray-700">Total:</div>
-                    <p class="font-bold text-lg text-gray-700">R$7.230,00</p>
+                <div className="max-w-sm rounded overflow-hidden shadow-lg bg-[#F1F1F1]">
+                  <div className="flex justify-between items-center px-6 py-4">
+                    <div className="font-bold text-lg text-gray-700">Total:</div>
+                    <p className="font-bold text-lg text-gray-700">R$7.230,00</p>
                   </div>
-                  <div class="grid grid-cols-2 gap-2 px-6 py-4">
-                    <button class="bg-white hover:bg-blue-700 text-stone-600 text-[0.6rem] lg:text-[0.8rem] font-bold py-2 px-4 rounded-full border-solid border-2 border-stone-300 w-full">
+                  <div className="grid grid-cols-2 gap-2 px-6 py-4">
+                    <button className="bg-white hover:bg-blue-700 text-stone-600 text-[0.6rem] lg:text-[0.8rem] font-bold py-2 px-4 rounded-full border-solid border-2 border-stone-300 w-full">
                       Finalizar
                     </button>
-                    <button class="bg-white hover:bg-blue-700 text-stone-600 text-[0.6rem] lg:text-[0.8rem] font-bold py-2 px-4 rounded-full border-solid border-2 border-stone-300">
+                    <button className="bg-white hover:bg-blue-700 text-stone-600 text-[0.6rem] lg:text-[0.8rem] font-bold py-2 px-4 rounded-full border-solid border-2 border-stone-300">
                       Editar Cesta
                     </button>
                   </div>

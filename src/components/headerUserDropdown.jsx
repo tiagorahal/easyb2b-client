@@ -156,13 +156,13 @@ export default function HeaderUserDropdown() {
             <Menu.Item>
               {({ active }) => (
                 <div className="grid grid-cols-3 gap-2 pt-5">
-                  <button class="bg-white hover:bg-blue-700 text-stone-600 text-[0.6rem] lg:text-[0.8rem] font-bold py-2 px-4 rounded-full border-solid border-2 border-stone-300 w-full">
+                  <button className="bg-white hover:bg-blue-700 text-stone-600 text-[0.6rem] lg:text-[0.8rem] font-bold py-2 px-4 rounded-full border-solid border-2 border-stone-300 w-full">
                     Meu Perfil
                   </button>
-                  <button class="bg-white hover:bg-blue-700 text-stone-600 text-[0.6rem] lg:text-[0.8rem] font-bold py-2 px-4 rounded-full border-solid border-2 border-stone-300">
+                  <button className="bg-white hover:bg-blue-700 text-stone-600 text-[0.6rem] lg:text-[0.8rem] font-bold py-2 px-4 rounded-full border-solid border-2 border-stone-300">
                     Suporte
                   </button>
-                  <button class="bg-white hover:bg-blue-700 text-stone-600 text-[0.6rem] lg:text-[0.8rem] font-bold py-2 px-4 rounded-full border-solid border-2 border-stone-300">
+                  <button className="bg-white hover:bg-blue-700 text-stone-600 text-[0.6rem] lg:text-[0.8rem] font-bold py-2 px-4 rounded-full border-solid border-2 border-stone-300">
                     Sair
                   </button>
                 </div>
