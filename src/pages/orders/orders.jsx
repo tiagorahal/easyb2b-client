@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import LibraryAddIcon from "@mui/icons-material/LibraryAdd";
 
 function Orders() {
@@ -142,9 +141,13 @@ function Orders() {
             <button className="bg-blue-500 p-2 rounded-lg text-white font-bold">
               VER RESUMO
             </button>
-            <button className="bg-blue-500 p-2 rounded-lg text-white font-bold">
+            <a
+              href="orderdetails"
+              className="bg-blue-500 p-2 rounded-lg text-white font-bold"
+            >
               VER DETALHES
-            </button>
+            </a>
+
             <button className="bg-blue-500 p-2 rounded-lg text-white font-bold">
               CONTRATAR
             </button>
@@ -154,7 +157,9 @@ function Orders() {
             <button className="bg-red-500 p-2 rounded-lg text-white font-bold">
               CANCELAR
             </button>
-            <span className="font-bold text-[0.9rem] xl:text-base pl-[3%]">R$ 1.957,89</span>
+            <span className="font-bold text-[0.9rem] xl:text-base pl-[3%]">
+              R$ 1.957,89
+            </span>
           </div>
           {/* table */}
           <div className="flex justify-center items-center space-x-4 text-[0.6rem] xl:text-sm pt-4">
@@ -209,14 +214,14 @@ function Orders() {
               </tbody>
             </table>
           </div>
-            <div className="flex justify-between text-sm xl:text-base font-bold my-1">
-              <span className="">Frete</span>
-              <span>R$ 0,00</span>
-            </div>
-            <div className="flex justify-between text-sm xl:text-base font-bold">
-              <span>Total do pedido</span>
-              <span>R$ 1.957,89</span>
-            </div>
+          <div className="flex justify-between text-sm xl:text-base font-bold my-1">
+            <span className="">Frete</span>
+            <span>R$ 0,00</span>
+          </div>
+          <div className="flex justify-between text-sm xl:text-base font-bold">
+            <span>Total do pedido</span>
+            <span>R$ 1.957,89</span>
+          </div>
         </div>
       </div>
     </div>
