@@ -135,7 +135,7 @@ function Orders() {
               <b>STATUS :</b> NO CARRINHO
             </span>
           </div>
-          <div className="flex justify-start items-center space-x-4 text-[0.7rem] pt-4">
+          <div className="flex justify-start items-center space-x-4 text-[0.7rem] xl:text-base pt-4">
             <button className="bg-blue-500 p-2 rounded-lg text-white font-bold">
               CLONAR PEDIDO
             </button>
@@ -148,28 +148,28 @@ function Orders() {
             <button className="bg-blue-500 p-2 rounded-lg text-white font-bold">
               CONTRATAR
             </button>
-            <button className="bg-blue-500 p-2 rounded-lg text-white font-bold">
+            <button className="bg-green-500 p-2 rounded-lg text-white font-bold">
               EDITAR
             </button>
-            <button className="bg-blue-500 p-2 rounded-lg text-white font-bold">
+            <button className="bg-red-500 p-2 rounded-lg text-white font-bold">
               CANCELAR
             </button>
-            <span className="font-bold text-[0.9rem] pl-[3%]">R$ 1.957,89</span>
+            <span className="font-bold text-[0.9rem] xl:text-base pl-[3%]">R$ 1.957,89</span>
           </div>
           {/* table */}
-          <div className="flex justify-center items-center space-x-4 text-[0.6rem] pt-4">
+          <div className="flex justify-center items-center space-x-4 text-[0.6rem] xl:text-sm pt-4">
             <table class="table-fixed">
               <thead>
                 <tr>
-                  <th class="w-[10%] px-4 py-2">COD</th>
-                  <th class="w-[10%] px-4 py-2">PRODUTO</th>
-                  <th class="w-[10%] px-4 py-2">CORES</th>
-                  <th class="w-[10%] px-4 py-2">TIPOS MATERIAL</th>
-                  <th class="w-[10%] px-4 py-2">COD CLIENTE</th>
-                  <th class="w-[10%] px-4 py-2">COD FORNECEDOR</th>
-                  <th class="w-[10%] px-4 py-2">QUANTIDADE</th>
-                  <th class="w-[10%] px-4 py-2">PREÇO UNICO</th>
-                  <th class="w-[10%] px-4 py-2">TOTAL</th>
+                  <th class="w-[10%] px-4 xl:px-9 py-2">COD</th>
+                  <th class="w-[10%] px-4 xl:px-9 py-2">PRODUTO</th>
+                  <th class="w-[10%] px-4 xl:px-9 py-2">CORES</th>
+                  <th class="w-[10%] px-4 xl:px-9 py-2">TIPOS MATERIAL</th>
+                  <th class="w-[10%] px-4 xl:px-9 py-2">COD CLIENTE</th>
+                  <th class="w-[10%] px-4 xl:px-9 py-2">COD FORNECEDOR</th>
+                  <th class="w-[10%] px-4 xl:px-9 py-2">QUANTIDADE</th>
+                  <th class="w-[10%] px-4 xl:px-9 py-2">PREÇO UNICO</th>
+                  <th class="w-[10%] px-4 xl:px-9 py-2">TOTAL</th>
                 </tr>
               </thead>
               <tbody>
@@ -209,11 +209,11 @@ function Orders() {
               </tbody>
             </table>
           </div>
-            <div className="flex justify-between text-sm font-bold my-1">
+            <div className="flex justify-between text-sm xl:text-base font-bold my-1">
               <span className="">Frete</span>
               <span>R$ 0,00</span>
             </div>
-            <div className="flex justify-between text-sm font-bold">
+            <div className="flex justify-between text-sm xl:text-base font-bold">
               <span>Total do pedido</span>
               <span>R$ 1.957,89</span>
             </div>
