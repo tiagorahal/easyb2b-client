@@ -32,11 +32,13 @@ export default function HeaderUpperSection() {
               paddingY: "1rem",
             }}
           >
+            <a href="/">
             <img
               className="hidden md:block md:h-12"
               src={easyLogo}
               alt="main logo"
             />
+            </a>
             {/* searchbox */}
             <div className="border rounded-full p-1 md:p-2 md:w-8/12 lg:w-6/12 xl:10/12 flex justify-between">
               <Input
@@ -64,7 +66,7 @@ export default function HeaderUpperSection() {
             </div>
             {/* right section */}
             <div className="bg-white hidden lg:flex lg:w-5/12 xl:w-4/12 lg:justify-between lg:items-center">
-              <AccountCircleIcon sx={{ color: "gray", fontSize: {md: "3rem", lg: "3.5rem"}  }} />
+              <AccountCircleIcon sx={{ color: "gray", fontSize: {md: "3rem", lg: "3.5rem"}, paddingLeft: {md: "0.5rem", lg: "0.1rem"}  }} />
               <span className="text-black text-[0.7rem] xl:text-[0.9rem]">
                 <b>Olá, Usuário</b>
                 <br />

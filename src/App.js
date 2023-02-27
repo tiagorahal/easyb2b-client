@@ -11,16 +11,18 @@ import OrderDetails from "./pages/orderDetails/orderDetails";
 function App() {
   return (
     <div className="body bg-white">
-      <Header />
       <BrowserRouter>
+        <Header />
+
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/productlist" element={<ProductsList />}></Route>
           <Route path="/orders" element={<Orders />}></Route>
           <Route path="/orderdetails" element={<OrderDetails />}></Route>
         </Routes>
+
+        <Footer />
       </BrowserRouter>
-      <Footer />
     </div>
   );
 }

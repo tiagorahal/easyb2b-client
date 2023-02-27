@@ -7,14 +7,14 @@ import TimeLineDetails from "./timeLineDetails";
 
 const OrderDetails = () => (
   <div className="order-details bg-[#edf0f5] py-3">
-    <Container class="bg-white grid rounded-lg p-6 my-3 max-w-[80%] m-auto">
+    <Container className="bg-white grid rounded-lg p-6 my-3 max-w-[80%] m-auto">
       <div className="sm:text-2xl xl:text-3xl grid grid-cols-3 gap-4">
         <span className="col-span-2">#Pedido 56798</span>
         <div className="col-start-4 col-end-7">
-          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 mx-1 border border-blue-700 rounded text-base">
+          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 mx-1 border border-blue-700 rounded text-base">
             Visualizar menssagens
           </button>
-          <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-1 px-3 mx-1 border border-gray-400 rounded shadow text-base">
+          <button className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-1 px-3 mx-1 border border-gray-400 rounded shadow text-base">
             Imprimir
           </button>
         </div>
@@ -48,10 +48,7 @@ const OrderDetails = () => (
         <p>
           <b>Prazo de entrega aproximado:</b>
           <br />
-          Obs: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-          vitae erat vel leo ultricies vestibulum non a nibh. Aenean in orci
-          nunc. Integer ut viverra lectus. Mauris facilisis, nisi ac facilisis
-          eleifend
+          Obs: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
         <p>
           <b>Endereço de entrega:</b>
@@ -93,7 +90,7 @@ const OrderDetails = () => (
       </div>
     </Container>
 
-    <Container class="bg-white grid min-h-[150px] w-full overflow-x-scroll rounded-lg p-6 lg:overflow-visible my-3 max-w-[80%] m-auto">
+    <Container className="bg-white grid min-h-[150px] w-full overflow-x-scroll rounded-lg p-6 lg:overflow-visible my-3 max-w-[80%] m-auto">
       <span className="sm:text-2xl lg:text-3xl">Status</span>
       <div className="relative">
         {/* Icons and Text */}
@@ -154,7 +151,7 @@ const OrderDetails = () => (
       </div>
     </Container>
 
-    <Container class="bg-white grid min-h-[600px] w-full place-items-center overflow-x-scroll rounded-lg p-6 my-3 max-w-[80%] m-auto">
+    <Container className="bg-white grid min-h-[600px] w-full place-items-center overflow-x-scroll rounded-lg p-6 my-3 max-w-[80%] m-auto">
 
       <TimeLineDetails />
     </Container>

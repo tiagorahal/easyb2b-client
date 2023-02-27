@@ -10,14 +10,14 @@ export default function ProductRows() {
   return (
     <div className="flex justify-between items-center pt-7">
       {products.map((product) => (
-        <div class="w-[24%] h-[450px] rounded overflow-hidden shadow-lg  bg-white">
+        <div className="w-[24%] h-[450px] rounded overflow-hidden shadow-lg  bg-white" key={product}>
           <img
-            class="w-full mt-5 object-contain max-h-[200px] m-auto bg-white pb-4 "
+            className="w-full mt-5 object-contain max-h-[200px] m-auto bg-white pb-4 "
             src={product}
             alt="Sunset in the mountains"
           />
           <div className="w-[95%] border-t-4 border-gray m-auto"></div>
-          <div class="px-2 py-1">
+          <div className="px-2 py-1">
             <button
               type="button"
               className="rounded text-[0.6rem] xl:text-[0.8rem] bg-orange-400 px-3 text-white"
@@ -35,7 +35,7 @@ export default function ProductRows() {
               <p className="line-through">R$22,75</p>
               <p>Unidade</p>
             </span>
-            <span className="text-orange-400 font-bold text-[0.8rem] xl:text-[0.8rem]">
+            <span className="text-orange-400 font-bold text-[0.8rem] xl:text-[1rem]">
               R$14,75
             </span>
           </div>
@@ -43,11 +43,11 @@ export default function ProductRows() {
           <div className="pt-2 flex justify-around items-center flex-col h-[20%] bg-[#FDEEDB]">
             <div className="flex justify-around items-center">
               <div className="flex justify-center items-center space-x-2 pr-4">
-                <button className="">-</button>
+                <button>-</button>
                 <span className="px-2 border border-black bg-white text-sm">
                   1
                 </span>
-                <button className="">+</button>
+                <button>+</button>
               </div>
               <button className="text-[0.6rem] xl:text-[0.8rem] bg-[#313457] text-white font-bold p-2 rounded-md xl:px-4">
                 Incluir no Carrinho

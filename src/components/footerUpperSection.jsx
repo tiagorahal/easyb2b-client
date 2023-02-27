@@ -19,7 +19,7 @@ export default function FooterUpperSection() {
       <div className="flex justify-center items-center h-12 rounded-lg p-4">
         <input
           type="search"
-          class="text-black h-9 text-[0.6rem] xl:text-[0.8rem] font-bold border border-orange-400 focus:border-orange-400 w-[250px] shadow-none"
+          className="text-black h-9 text-[0.6rem] xl:text-[0.8rem] font-bold border border-orange-400 focus:border-orange-400 w-[250px] shadow-none"
           placeholder="Nos diga seu e-mail"
         />
         <button className="text-[0.6rem] xl:text-[0.8rem] font-bold flex justify-center items-center w-20 bg-orange-400 h-9">

@@ -20,29 +20,29 @@ function Orders() {
         </div>
         <div className="bg-white min-h-[300px] rounded-md">
           <div className="flex flex-col pt-4">
-            <div class="block min-h-[1.5rem] pl-[1rem]">
+            <div className="block min-h-[1.5rem] pl-[1rem]">
               <input
-                class=""
+                className=""
                 type="radio"
                 name="flexRadioDefault"
                 id="radioDefault01"
               />
               <label
-                class="mt-px inline-block pl-[0.15rem] hover:cursor-pointer"
+                className="mt-px inline-block pl-[0.15rem] hover:cursor-pointer"
                 for="radioDefault01"
               >
                 Catálogo
               </label>
             </div>
-            <div class="block min-h-[1.5rem] pl-[1rem]">
+            <div className="block min-h-[1.5rem] pl-[1rem]">
               <input
-                class=""
+                className=""
                 type="radio"
                 name="flexRadioDefault"
                 id="radioDefault01"
               />
               <label
-                class="mt-px inline-block pl-[0.15rem] hover:cursor-pointer"
+                className="mt-px inline-block pl-[0.15rem] hover:cursor-pointer"
                 for="radioDefault01"
               >
                 Cotação
@@ -50,20 +50,20 @@ function Orders() {
             </div>
           </div>
           {/* inputs */}
-          <div class="grid grid-cols-4 gap-2 px-4 py-3">
-            <div class="relative">
+          <div className="grid grid-cols-4 gap-2 px-4 py-3">
+            <div className="relative">
               <label className="invisible">Id Input</label>
-              <input type="text" class="rounded-lg w-[100%]" placeholder="Id" />
+              <input type="text" className="rounded-lg w-[100%]" placeholder="Id" />
             </div>
-            <div class="relative">
+            <div className="relative">
               <label>Faturamento de</label>
-              <input type="date" class="rounded-lg w-[100%]" placeholder="Id" />
+              <input type="date" className="rounded-lg w-[100%]" placeholder="Id" />
             </div>
-            <div class="relative">
+            <div className="relative">
               <label>Até faturamento</label>
-              <input type="date" class="rounded-lg w-[100%]" placeholder="Id" />
+              <input type="date" className="rounded-lg w-[100%]" placeholder="Id" />
             </div>
-            <div class="relative">
+            <div className="relative">
               <label className="invisible">Select Input</label>
               <select className="w-full rounded-lg text-sm">
                 <option value="Todas as Prioridades">
@@ -72,36 +72,36 @@ function Orders() {
               </select>
             </div>
             {/* second row */}
-            <div class="relative">
+            <div className="relative">
               <label className="invisible">IDate Input</label>
-              <input type="date" class="rounded-lg w-[100%]" placeholder="Id" />
+              <input type="date" className="rounded-lg w-[100%]" placeholder="Id" />
             </div>
-            <div class="relative">
+            <div className="relative">
               <label className="invisible">IDate Input</label>
-              <input type="date" class="rounded-lg w-[100%]" placeholder="Id" />
+              <input type="date" className="rounded-lg w-[100%]" placeholder="Id" />
             </div>
-            <div class="relative">
+            <div className="relative">
               <label className="invisible">Select Input</label>
               <select className="w-full rounded-lg">
                 <option value="Todos">Todos</option>
               </select>
             </div>
-            <div class="relative">
+            <div className="relative">
               <label className="invisible">Select Input</label>
               <select className="w-full rounded-lg">
                 <option value="Todos">Todos</option>
               </select>
             </div>
             {/* last row */}
-            <div class="relative">
+            <div className="relative">
               <label className="invisible">Text Input</label>
-              <input type="text" class="rounded-lg w-[100%]" />
+              <input type="text" className="rounded-lg w-[100%]" />
             </div>
-            <div class="relative">
+            <div className="relative">
               <label className="invisible">Text Input</label>
               <button
                 type="button"
-                class="rounded-lg w-[100%] font-bold bg-blue-500 h-[65%] text-white"
+                className="rounded-lg w-[100%] font-bold bg-blue-500 h-[65%] text-white"
               >
                 Buscar
               </button>
@@ -163,53 +163,53 @@ function Orders() {
           </div>
           {/* table */}
           <div className="flex justify-center items-center space-x-4 text-[0.6rem] xl:text-sm pt-4">
-            <table class="table-fixed">
+            <table className="table-fixed">
               <thead>
                 <tr>
-                  <th class="w-[10%] px-4 xl:px-9 py-2">COD</th>
-                  <th class="w-[10%] px-4 xl:px-9 py-2">PRODUTO</th>
-                  <th class="w-[10%] px-4 xl:px-9 py-2">CORES</th>
-                  <th class="w-[10%] px-4 xl:px-9 py-2">TIPOS MATERIAL</th>
-                  <th class="w-[10%] px-4 xl:px-9 py-2">COD CLIENTE</th>
-                  <th class="w-[10%] px-4 xl:px-9 py-2">COD FORNECEDOR</th>
-                  <th class="w-[10%] px-4 xl:px-9 py-2">QUANTIDADE</th>
-                  <th class="w-[10%] px-4 xl:px-9 py-2">PREÇO UNICO</th>
-                  <th class="w-[10%] px-4 xl:px-9 py-2">TOTAL</th>
+                  <th className="w-[10%] px-4 xl:px-9 py-2">COD</th>
+                  <th className="w-[10%] px-4 xl:px-9 py-2">PRODUTO</th>
+                  <th className="w-[10%] px-4 xl:px-9 py-2">CORES</th>
+                  <th className="w-[10%] px-4 xl:px-9 py-2">TIPOS MATERIAL</th>
+                  <th className="w-[10%] px-4 xl:px-9 py-2">COD CLIENTE</th>
+                  <th className="w-[10%] px-4 xl:px-9 py-2">COD FORNECEDOR</th>
+                  <th className="w-[10%] px-4 xl:px-9 py-2">QUANTIDADE</th>
+                  <th className="w-[10%] px-4 xl:px-9 py-2">PREÇO UNICO</th>
+                  <th className="w-[10%] px-4 xl:px-9 py-2">TOTAL</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td class="font-bold border px-4 py-2">123</td>
-                  <td class="border px-4 py-2">Produto</td>
-                  <td class="border px-4 py-2"></td>
-                  <td class="border px-4 py-2"></td>
-                  <td class="border px-4 py-2">1321</td>
-                  <td class="border px-4 py-2">21</td>
-                  <td class="border px-4 py-2">1</td>
-                  <td class="border px-4 py-2">21</td>
-                  <td class="border px-4 py-2">R$ 121,00</td>
+                  <td className="font-bold border px-4 py-2">123</td>
+                  <td className="border px-4 py-2">Produto</td>
+                  <td className="border px-4 py-2"></td>
+                  <td className="border px-4 py-2"></td>
+                  <td className="border px-4 py-2">1321</td>
+                  <td className="border px-4 py-2">21</td>
+                  <td className="border px-4 py-2">1</td>
+                  <td className="border px-4 py-2">21</td>
+                  <td className="border px-4 py-2">R$ 121,00</td>
                 </tr>
-                <tr class="bg-gray-100">
-                  <td class="font-bold border px-4 py-2">123</td>
-                  <td class="border px-4 py-2">Produto</td>
-                  <td class="border px-4 py-2"></td>
-                  <td class="border px-4 py-2"></td>
-                  <td class="border px-4 py-2">1321</td>
-                  <td class="border px-4 py-2">21</td>
-                  <td class="border px-4 py-2">1</td>
-                  <td class="border px-4 py-2">21</td>
-                  <td class="border px-4 py-2">R$ 121,00</td>
+                <tr className="bg-gray-100">
+                  <td className="font-bold border px-4 py-2">123</td>
+                  <td className="border px-4 py-2">Produto</td>
+                  <td className="border px-4 py-2"></td>
+                  <td className="border px-4 py-2"></td>
+                  <td className="border px-4 py-2">1321</td>
+                  <td className="border px-4 py-2">21</td>
+                  <td className="border px-4 py-2">1</td>
+                  <td className="border px-4 py-2">21</td>
+                  <td className="border px-4 py-2">R$ 121,00</td>
                 </tr>
                 <tr>
-                  <td class="font-bold border px-4 py-2">123</td>
-                  <td class="border px-4 py-2">Produto</td>
-                  <td class="border px-4 py-2"></td>
-                  <td class="border px-4 py-2"></td>
-                  <td class="border px-4 py-2">1321</td>
-                  <td class="border px-4 py-2">21</td>
-                  <td class="border px-4 py-2">1</td>
-                  <td class="border px-4 py-2">21</td>
-                  <td class="border px-4 py-2">R$ 121,00</td>
+                  <td className="font-bold border px-4 py-2">123</td>
+                  <td className="border px-4 py-2">Produto</td>
+                  <td className="border px-4 py-2"></td>
+                  <td className="border px-4 py-2"></td>
+                  <td className="border px-4 py-2">1321</td>
+                  <td className="border px-4 py-2">21</td>
+                  <td className="border px-4 py-2">1</td>
+                  <td className="border px-4 py-2">21</td>
+                  <td className="border px-4 py-2">R$ 121,00</td>
                 </tr>
               </tbody>
             </table>

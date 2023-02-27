@@ -22,7 +22,7 @@ const ProductsList = () => (
         />
       </div>
       <div className="flex justify-end items-end pt-5">
-        <div class="flex justify-center space-x-2">
+        <div className="flex justify-center space-x-2">
           <select
             data-te-select-init
             className="rounded-full border-none text-gray-400 text-[0.6rem] lg:text-[0.8rem] flex justify-center ring-0"
