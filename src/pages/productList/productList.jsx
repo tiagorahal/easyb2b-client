@@ -3,6 +3,8 @@ import productsBanner from "../../assets/banner.png";
 import logoBig from "../../assets/logo2.png";
 import GridOnIcon from "@mui/icons-material/GridOn";
 import ViewListIcon from "@mui/icons-material/ViewList";
+import ProductRows from "./productRows";
+import ProductPagination from "./productPagination";
 
 const ProductsList = () => (
   <div className="bg-[#edf0f5]">
@@ -46,7 +48,12 @@ const ProductsList = () => (
           </button>
         </div>
       </div>
+      <ProductRows />
+      <ProductRows />
+      <ProductRows />
+      <ProductRows />
     </div>
+    <ProductPagination />
   </div>
 );
 
