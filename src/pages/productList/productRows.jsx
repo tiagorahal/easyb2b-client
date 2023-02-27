@@ -8,7 +8,7 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 export default function ProductRows() {
   const products = [productZero, productOne, productTwo, productThree];
   return (
-    <div className="flex justify-between items-center pt-10">
+    <div className="flex justify-between items-center pt-7">
       {products.map((product) => (
         <div class="w-[24%] h-[450px] rounded overflow-hidden shadow-lg  bg-white">
           <img

@@ -11,7 +11,7 @@ export default function FooterUpperSection() {
       {/* newsletter section */}
       <span className="flex items-center space-x-3">
         <SendIcon fontSize="small" />
-        <p className="text-[0.6rem] xl:text-[0.8rem] font-bold">
+        <p className="text-[0.6rem] font-bold">
           Assine agora <br /> Nossa Newsletter
         </p>
       </span>
@@ -30,7 +30,7 @@ export default function FooterUpperSection() {
       <div className="border-r-4 border-0 border-orange-400 h-9"></div>
       {/* social icons */}
       <div className="flex items-center justify-center">
-        <span className="text-[0.6rem] xl:text-[1rem] pr-2 sm:pt-0 xl:pt-1">Acompanhe</span>
+        <span className="text-[0.6rem] xl:text-[0.8rem] pr-2 sm:pt-0">Acompanhe</span>
         <button>
           <LinkedInIcon
             sx={{

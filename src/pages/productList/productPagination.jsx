@@ -5,12 +5,12 @@ export default function ProductPagination() {
         <ul class="list-style-none flex space-x-3">
           <li className="rounded-full bg-white">
             <a class="pointer-events-none relative block rounded-full bg-transparent py-1.5 px-3 text-sm text-neutral-500 transition-all duration-300 ">
-              {'<'}
+              {"<"}
             </a>
           </li>
           <li className="rounded-full bg-white">
             <a class="pointer-events-none relative block rounded-full bg-transparent py-1.5 px-3 text-sm text-neutral-500 transition-all duration-300 ">
-              {'<<'}
+              {"<<"}
             </a>
           </li>
           <li className="rounded-full bg-white">
@@ -53,7 +53,7 @@ export default function ProductPagination() {
               class="relative block rounded-full bg-transparent py-1.5 px-3 text-sm text-neutral-600 transition-all duration-300 hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white"
               href="#!"
             >
-              {'>>'}
+              {">>"}
             </a>
           </li>
           <li className="rounded-full bg-white">
@@ -61,7 +61,7 @@ export default function ProductPagination() {
               class="relative block rounded-full bg-transparent py-1.5 px-3 text-sm text-neutral-600 transition-all duration-300 hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white"
               href="#!"
             >
-              {'>'}
+              {">"}
             </a>
           </li>
         </ul>
