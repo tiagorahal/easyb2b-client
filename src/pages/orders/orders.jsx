@@ -3,7 +3,7 @@ import LibraryAddIcon from "@mui/icons-material/LibraryAdd";
 
 function Orders() {
   return (
-    <div className="h-screen bg-gray-200 overflow-scroll overflow-x-hidden">
+    <div className="h-screen bg-[#edf0f5] overflow-scroll overflow-x-hidden">
       <div className="w-10/12 m-auto pt-7">
         <div className="flex justify-between items-center pb-7">
           <span className="text-3xl font-bold">Pedidos Realizados</span>

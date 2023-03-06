@@ -7,6 +7,7 @@ import Footer from "./components/footer";
 import ProductsList from "./pages/productList/productList";
 import Orders from "./pages/orders/orders";
 import OrderDetails from "./pages/orderDetails/orderDetails";
+import ControlPanel from "./pages/controlPanel/controlPanel";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/productlist" element={<ProductsList />}></Route>
           <Route path="/orders" element={<Orders />}></Route>
           <Route path="/orderdetails" element={<OrderDetails />}></Route>
+          <Route path="/controlpanel" element={<ControlPanel />}></Route>
         </Routes>
 
         <Footer />

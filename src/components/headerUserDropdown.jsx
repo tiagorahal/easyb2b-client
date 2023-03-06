@@ -35,7 +35,8 @@ export default function HeaderUserDropdown() {
             <Menu.Item>
               {({ active }) => (
                 <div className="flex justify-around">
-                  <button
+                  <a
+                    href="/controlpanel"
                     type="submit"
                     className={classNames(
                       "block py-1 text-left text-[0.6rem] lg:text-[0.8rem] flex items-center justify-start h-12"
@@ -48,7 +49,7 @@ export default function HeaderUserDropdown() {
                       }}
                     />
                     Painel de Controle
-                  </button>
+                  </a>
                   <button
                     type="submit"
                     className={classNames(
