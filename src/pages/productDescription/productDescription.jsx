@@ -49,7 +49,7 @@ export default function ProductDescription() {
           </p>
 
           <div className="flex justify-between items-center pt-16 w-6/12">
-            <span className=" text-[0.6rem] xl:text-[0.9rem] underline font-bold text-orange-400">
+            <span className="text-[0.6rem] xl:text-[0.9rem] underline font-bold text-orange-400">
               UNID
             </span>
             <span className="text-[0.9rem] xl:text-[1.5rem] font-bold text-orange-400">

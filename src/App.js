@@ -9,12 +9,14 @@ import Orders from "./pages/orders/orders";
 import OrderDetails from "./pages/orderDetails/orderDetails";
 import ControlPanel from "./pages/controlPanel/controlPanel";
 import ProductDescription from "./pages/productDescription/productDescription";
+import SideCartProducts from "./components/sideCartProducts";
 
 function App() {
   return (
     <div className="body bg-white">
       <BrowserRouter>
         <Header />
+        <SideCartProducts />
 
         <Routes>
           <Route path="/" element={<Home />}></Route>
