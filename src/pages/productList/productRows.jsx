@@ -25,7 +25,7 @@ export default function ProductRows() {
               Promoção
             </button>
             <p>
-              <a href="#" className="text-[0.7rem] xl:text-[0.9rem] font-bold">
+              <a href={ product === productOne ? "/productdescription" : '#'} className="text-[0.7rem] xl:text-[0.9rem] font-bold">
                 PAPEL CHAMEX A4 LASER 75G PACOTE 500 FOLHAS
               </a>
             </p>
