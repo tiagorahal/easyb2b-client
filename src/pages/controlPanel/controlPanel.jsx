@@ -1,12 +1,27 @@
+import { useState } from "react";
+import { Modal } from "@mui/material";
 import BackupIcon from "@mui/icons-material/Backup";
 import AddBoxIcon from "@mui/icons-material/AddBox";
 import ControlPanelTableFiliais from "./controlPanelTableFiliais";
 import ControlPanelTableUsers from "./controlPanelTableUsers";
 import ControlPanelPagination from "./controlPanelPagination";
+import ControlPanelModalAddBranch from "./controlPanelModalAddBranch";
+import ControlPanelModalAddUser from "./controlPanelModaAddlUser";
+import CloseIcon from "@mui/icons-material/Close";
 
 export default function ControlPanel() {
+  const [showModalAddBranch, setshowModalAddBranch] = useState(false);
+  const closeModalAddBranch = () => setshowModalAddBranch(false);
+  const openModalAddBranch = () => setshowModalAddBranch(true);
+
+
+
+  const [showModalAddUser, setshowModalAddUser] = useState(false);
+  const closeModalAddUser = () => setshowModalAddUser(false);
+  const openModalAddUser = () => setshowModalAddUser(true);
+
   return (
-    <div className="bg-[#edf0f5]">
+    <div className="bg-[#edf0f5] pb-10">
       <div className="w-9/12 m-auto  p-5 flex flex-col items-start">
         {/* first section */}
         <p className="font-bold text-lg pb-4 mt-5">Dados do Cliente</p>
@@ -38,9 +53,9 @@ export default function ControlPanel() {
               <b>Telefone</b> <br />
               (11)3175-0183
             </p>
-            <div class="px-3 w-[21%] text-[0.6rem] xl:text-[0.9rem]">
-              <div class="flex w-full h-screen font-bold items-center justify-center bg-grey-lighter">
-                <label class="text-white w-64 flex flex-col items-center bg-[#313457] text-blue rounded-lg shadow-lg tracking-wide uppercase border border-blue cursor-pointer">
+            <div className="px-3 w-[21%] text-[0.6rem] xl:text-[0.9rem]">
+              <div className="flex w-full h-screen font-bold items-center justify-center bg-grey-lighter">
+                <label className="text-white w-64 flex flex-col items-center bg-[#313457] text-blue rounded-lg shadow-lg tracking-wide uppercase border border-blue cursor-pointer">
                   <BackupIcon />
                   <span>
                     <span className=" text-[0.5rem] xl:text-[0.9rem]">
@@ -48,7 +63,7 @@ export default function ControlPanel() {
                       Alterar logo (218x128){" "}
                     </span>
                   </span>
-                  <input type="file" class="hidden" />
+                  <input type="file" className="hidden" />
                 </label>
               </div>
             </div>
@@ -68,32 +83,76 @@ export default function ControlPanel() {
         {/* fourth section */}
         <div className="flex justify-between items-end w-full">
           <p className="font-bold text-lg py-4 mt-5">Filiais</p>
-          <a href="#" className="text-[0.6rem] py-1">
+          <button
+            className="text-[0.5rem] xl:text-[0.8rem] py-1 flex items-center space-x-2"
+            onClick={openModalAddBranch}
+          >
             <AddBoxIcon
-              sx={{ fontSize: { sm: "0.8rem", xl: "0.7rem" }, color: "orange" }}
+              sx={{
+                fontSize: { sm: "0.9rem", xl: "1.3rem" },
+                color: "orange",
+                paddingRight: "3px",
+              }}
             />
-            <span className="px-1">ADICIONAR FILIAL</span>
-          </a>
+            ADICIONAR FILIAL
+          </button>
+          {/* add modal */}
+          <Modal
+            open={showModalAddBranch}
+            onClose={closeModalAddBranch}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+            sx={{ overflow: "scroll" }}
+          >
+            <div className="mx-auto my-auto bg-white w-8/12 xl:w-4/12 rounded-lg pb-5">
+              <div className="flex justify-between font-medium text-2xl p-4">
+                <p className="">ADICIONAR FILIAL</p>
+                <button onClick={closeModalAddBranch}>
+                  <CloseIcon sx={{ color: "gray" }} />
+                </button>
+              </div>
+              <div className="border-b-2 border-gray-400 w-full"></div>
+              <ControlPanelModalAddBranch />
+              <div className="border-b-2 border-gray-400 w-full pb-5"></div>
+              <div className="w-[95%] flex justify-end items-center pt-5 space-x-4">
+              <button
+                  type="button"
+                  className="text-[1rem] text-white font-bold bg-green-500 px-3 py-2 rounded-md"
+                  onClick={closeModalAddBranch}
+                >
+                  Salvar
+                </button>
+                <button
+                  type="button"
+                  className="text-[1rem] text-white font-bold bg-gray-500 px-3 py-2 rounded-md"
+                  onClick={closeModalAddBranch}
+                >
+                  Fechar
+                </button>
+
+              </div>
+            </div>
+          </Modal>
         </div>
         <div className="bg-white w-full rounded-lg flex justify-between items-center p-3">
           <input
             type="text"
             id="first_name"
-            class="w-[25%] text-[0.5rem] xl:text-[0.8rem] rounded-md bg-[#edf0f5] border border-[#edf0f5] focus:border-orange-400 focus:ring-0"
+            className="w-[25%] text-[0.5rem] xl:text-[0.8rem] rounded-md bg-[#edf0f5] border border-[#edf0f5] focus:border-orange-400 focus:ring-0"
             placeholder="Id"
             required
           />
           <input
             type="text"
             id="first_name"
-            class="w-[25%] text-[0.5rem] xl:text-[0.8rem] rounded-md bg-[#edf0f5] border border-[#edf0f5] focus:border-orange-400 focus:ring-0"
+            className="w-[25%] text-[0.5rem] xl:text-[0.8rem] rounded-md bg-[#edf0f5] border border-[#edf0f5] focus:border-orange-400 focus:ring-0"
             placeholder="Nome"
             required
           />
           <input
             type="text"
             id="first_name"
-            class="w-[25%] text-[0.5rem] xl:text-[0.8rem] rounded-md bg-[#edf0f5] border border-[#edf0f5] focus:border-orange-400 focus:ring-0"
+            className="w-[25%] text-[0.5rem] xl:text-[0.8rem] rounded-md bg-[#edf0f5] border border-[#edf0f5] focus:border-orange-400 focus:ring-0"
             placeholder="CNPJ"
             required
           />
@@ -106,35 +165,87 @@ export default function ControlPanel() {
           <ControlPanelPagination />
         </div>
         {/* users */}
+        <div className="flex justify-between items-end w-full">
         <p className="font-bold text-lg py-4 mt-5">Usuários</p>
+        <button
+            className="text-[0.5rem] xl:text-[0.8rem] py-1 flex items-center space-x-2"
+            onClick={openModalAddUser}
+          >
+            <AddBoxIcon
+              sx={{
+                fontSize: { sm: "0.9rem", xl: "1.3rem" },
+                color: "orange",
+                paddingRight: "3px",
+              }}
+            />
+            ADICIONAR USUÁRIOS
+          </button>
+          <Modal
+            open={showModalAddUser}
+            onClose={closeModalAddUser}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+            sx={{ overflow: "scroll", paddingTop: '5%' }}
+          >
+            <div className="mx-auto my-auto bg-white w-8/12 xl:w-4/12 rounded-lg pb-5">
+              <div className="flex justify-between font-medium text-2xl p-4">
+                <p className="">ADICIONAR USUÁRIO</p>
+                <button onClick={closeModalAddUser}>
+                  <CloseIcon sx={{ color: "gray" }} />
+                </button>
+              </div>
+              <div className="border-b-2 border-gray-400 w-full"></div>
+              <ControlPanelModalAddUser />
+              <div className="border-b-2 border-gray-400 w-full pb-5"></div>
+              <div className="w-[95%] flex justify-end items-center pt-5 space-x-4">
+              <button
+                  type="button"
+                  className="text-[1rem] text-white font-bold bg-green-500 px-3 py-2 rounded-md"
+                  onClick={closeModalAddUser}
+                >
+                  Salvar
+                </button>
+                <button
+                  type="button"
+                  className="text-[1rem] text-white font-bold bg-gray-500 px-3 py-2 rounded-md"
+                  onClick={closeModalAddUser}
+                >
+                  Fechar
+                </button>
+
+              </div>
+            </div>
+          </Modal>
+        </div>
+        
         <div className="bg-white w-full flex justify-center items-center flex-col rounded-lg space-x-4 text-[0.5rem] xl:text-[0.7rem] mt-1">
           <div className="grid grid-cols-3 gap-5 w-full p-4 text-[0.5rem] xl:text-[0.8rem]">
             {/* first row */}
             <input
               type="text"
               id="first_name"
-              class="text-[0.6rem] xl:text-[0.8rem] xl:text-base rounded-md bg-[#edf0f5] border border-[#edf0f5] focus:border-orange-400"
+              className="text-[0.6rem] xl:text-[0.8rem] xl:text-base rounded-md bg-[#edf0f5] border border-[#edf0f5] focus:border-orange-400"
               placeholder="Id"
               required
             />
             <input
               type="text"
               id="first_name"
-              class="text-[0.6rem] xl:text-[0.8rem] xl:text-base rounded-md bg-[#edf0f5] border border-[#edf0f5] focus:border-orange-400"
+              className="text-[0.6rem] xl:text-[0.8rem] xl:text-base rounded-md bg-[#edf0f5] border border-[#edf0f5] focus:border-orange-400"
               placeholder="Nome"
               required
             />
             <input
               type="text"
               id="first_name"
-              class="text-[0.6rem] xl:text-[0.8rem] xl:text-base rounded-md bg-[#edf0f5] border border-[#edf0f5] focus:border-orange-400"
+              className="text-[0.6rem] xl:text-[0.8rem] xl:text-base rounded-md bg-[#edf0f5] border border-[#edf0f5] focus:border-orange-400"
               placeholder="Email"
               required
             />
             {/* second row */}
             <select
               data-te-select-init
-              class="text-[0.6rem] xl:text-[0.8rem] xl:text-base rounded-md bg-[#edf0f5] border border-[#edf0f5] focus:border-orange-400 focus:ring-0"
+              className="text-[0.6rem] xl:text-[0.8rem] xl:text-base rounded-md bg-[#edf0f5] border border-[#edf0f5] focus:border-orange-400 focus:ring-0"
             >
               <option value="0">-Permissão-</option>
               <option value="NIVEL A">NIVEL A</option>
@@ -143,7 +254,7 @@ export default function ControlPanel() {
             </select>
             <select
               data-te-select-init
-              class="text-[0.6rem] xl:text-[0.8rem] xl:text-base rounded-md bg-[#edf0f5] border border-[#edf0f5] focus:border-orange-400 focus:ring-0"
+              className="text-[0.6rem] xl:text-[0.8rem] xl:text-base rounded-md bg-[#edf0f5] border border-[#edf0f5] focus:border-orange-400 focus:ring-0"
             >
               <option value="0">-Filial-</option>
               <option value="MATRIZ MG">MATRIZ MG</option>
@@ -153,7 +264,7 @@ export default function ControlPanel() {
             </select>
             <select
               data-te-select-init
-              class="text-[0.6rem] xl:text-[0.8rem] xl:text-base rounded-md bg-[#edf0f5] border border-[#edf0f5] focus:border-orange-400 focus:ring-0"
+              className="text-[0.6rem] xl:text-[0.8rem] xl:text-base rounded-md bg-[#edf0f5] border border-[#edf0f5] focus:border-orange-400 focus:ring-0"
             >
               <option value="0">-Fez Login-</option>
               <option value="Sim">Sim</option>
@@ -162,7 +273,7 @@ export default function ControlPanel() {
             {/* third row */}
             <select
               data-te-select-init
-              class="text-[0.6rem] xl:text-[0.8rem] xl:text-base rounded-md bg-[#edf0f5] border border-[#edf0f5] focus:border-orange-400 focus:ring-0"
+              className="text-[0.6rem] xl:text-[0.8rem] xl:text-base rounded-md bg-[#edf0f5] border border-[#edf0f5] focus:border-orange-400 focus:ring-0"
             >
               <option value="0">-Inativo-</option>
               <option value="Sim">Sim</option>
@@ -171,7 +282,7 @@ export default function ControlPanel() {
             <button
               type="button"
               id="first_name"
-              class="bg-[#313457] px-4 py-2 rounded-md text-white text-[0.6rem] xl:text-[0.8rem] xl:text-base font-bold text-center w-6/12"
+              className="bg-[#313457] px-4 py-2 rounded-md text-white text-[0.6rem] xl:text-[0.8rem] xl:text-base font-bold text-center w-6/12"
               placeholder="Nome"
               required
             >
