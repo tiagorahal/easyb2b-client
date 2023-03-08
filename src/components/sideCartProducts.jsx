@@ -30,11 +30,11 @@ export default function SideCartProducts() {
             {({ active }) => (
               <div class=" bg-[#edf0f5] min-h-20 w-full p-4">
                 {/* title */}
-                <div className="grid grid-cols-4 gap-4 pb-5">
+                <div className="flex justify-center space-x-5 items start pb-5">
                   <p className="col-start-1 col-span-3 text-xl pl-3 py-2">
                     <b>PEDIDO 1:</b> 9 PRODUTOS NO CARRINHO
                   </p>
-                  <button class=" text-xl w-full text-white bg-indigo-600 py-2 rounded-xl shadow-lg">
+                  <button class=" text-xl w-3/12 text-white bg-indigo-600 py-2 rounded-xl shadow-lg">
                     +Detalhes
                   </button>
                 </div>
