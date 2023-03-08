@@ -1,44 +1,36 @@
-import "./App.css";
-import "react-step-progress-bar/styles.css";
-import Footer from "./components/footer";
+import "./app.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React from "react";
 import Header from "./components/header";
+import Home from "./pages/home/home";
+import Footer from "./components/footer";
+import ProductsList from "./pages/productList/productList";
+import Orders from "./pages/orders/orders";
+import OrderDetails from "./pages/orderDetails/orderDetails";
+import ControlPanel from "./pages/controlPanel/controlPanel";
+import ProductDescription from "./pages/productDescription/productDescription";
+import SideCartProducts from "./components/sideCartProducts";
 
-import Home from './pages/home';
-import Checkout from './pages/checkout';
-import Pedidos from './pages/pedidos';
-import ProductsList from './pages/productsList';
-import Description from './pages/description';
-import ControlPanel from './pages/controlPanel';
-import OrderDetails from "./pages/orderDetails";
-
-import React, { Component } from "react";
-import {
-  Route,
-  BrowserRouter as Router,
-  Routes,
-  Navigate,
-} from "react-router-dom";
-
-class App extends Component {
-  render() {
-    return (
-      <div className="app">
+function App() {
+  return (
+    <div className="body bg-white">
+      <BrowserRouter>
         <Header />
+        <SideCartProducts />
 
         <Routes>
-          <Route path="/" element={<Home />} exact />
-          <Route path="/checkout" element={<Checkout />} />
-          <Route path="/pedidos" element={<Pedidos />} />
-          <Route path="/productsList" element={<ProductsList />} />
-          <Route path="/description" element={<Description />} />
-          <Route path="/orderDetails" element={<OrderDetails />} />
-          <Route path="/controlPanel" element={<ControlPanel />} />
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/productlist" element={<ProductsList />}></Route>
+          <Route path="/orders" element={<Orders />}></Route>
+          <Route path="/orderdetails" element={<OrderDetails />}></Route>
+          <Route path="/controlpanel" element={<ControlPanel />}></Route>
+          <Route path="/productdescription" element={<ProductDescription />}></Route>
         </Routes>
 
         <Footer />
-      </div>
-    );
-  }
+      </BrowserRouter>
+    </div>
+  );
 }
 
 export default App;

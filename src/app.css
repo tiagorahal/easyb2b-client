@@ -1,0 +1,15 @@
+body {
+  font-family: "Montserrat";
+}
+
+input {
+  --tw-ring-shadow: 0 0 #000 !important;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+input:focus-visible {
+  outline: none !important;
+}
