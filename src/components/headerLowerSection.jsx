@@ -6,11 +6,11 @@ export default function HeaderLowerSection() {
     "FILTRO",
     "DEPARTAMENTO",
     "PRODUTOS",
-    "ITEM MENU 1",
+    /*"ITEM MENU 1",
     "ITEM MENU 2",
     "ITEM MENU 3",
     "ITEM MENU 4",
-    "ITEM MENU 5",
+    "ITEM MENU 5",*/
   ];
 
   return (
@@ -20,7 +20,7 @@ export default function HeaderLowerSection() {
           {value === "FILTRO" && (
             <SortIcon sx={{ color: "white" }} />
           )}
-          <a href={ value === "PRODUTOS" ? '/productlist' : '#'}>{value}</a>
+          <a href={ value === "PRODUTOS" ? '/' : '#'}>{value}</a>
         </li>
       ))}
     </ul>

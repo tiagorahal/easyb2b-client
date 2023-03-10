@@ -19,8 +19,8 @@ function App() {
         <SideCartProducts />
 
         <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/productlist" element={<ProductsList />}></Route>
+          {/*<Route path="/" element={<Home />}></Route>*/}
+          <Route path="/" element={<ProductsList />}></Route>
           <Route path="/orders" element={<Orders />}></Route>
           <Route path="/orderdetails" element={<OrderDetails />}></Route>
           <Route path="/controlpanel" element={<ControlPanel />}></Route>
